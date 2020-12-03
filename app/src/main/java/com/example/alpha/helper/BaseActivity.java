@@ -23,4 +23,9 @@ public abstract class BaseActivity extends AppCompatActivity {
         initFont();
         textView.setTypeface(fonts);
     }
+
+    public void applyFontBoldToTextView(TextView textView) {
+        initFont();
+        textView.setTypeface(fontsBold);
+    }
 }

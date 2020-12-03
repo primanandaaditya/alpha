@@ -18,7 +18,7 @@
         android:layout_height="match_parent">
 
         <androidx.cardview.widget.CardView
-            android:layout_margin="40dp"
+            android:layout_margin="20dp"
             android:background="@color/putih"
             xmlns:card_view="http://schemas.android.com/apk/res-auto"
             android:id="@+id/card_view"
@@ -35,7 +35,8 @@
 
                 <TextView
                     android:layout_alignParentTop="true"
-                    android:textSize="30dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
                     android:gravity="center_horizontal"
                     android:id="@+id/tv_login"
                     android:text="@string/registrasi"
@@ -64,8 +65,7 @@
                         </TextView>
 
                         <EditText
-                            android:padding="8dp"
-                            android:background="@drawable/border_edittext"
+                            style="@style/myEditText"
                             android:inputType="text"
                             android:id="@+id/et_nama"
                             android:layout_width="match_parent"
@@ -83,8 +83,7 @@
                         </TextView>
 
                         <EditText
-                            android:padding="8dp"
-                            android:background="@drawable/border_edittext"
+                            style="@style/myEditText"
                             android:inputType="textEmailAddress"
                             android:id="@+id/et_email"
                             android:layout_width="match_parent"
@@ -106,8 +105,7 @@
                         </TextView>
 
                         <EditText
-                            android:padding="8dp"
-                            android:background="@drawable/border_edittext"
+                            style="@style/myEditText"
                             android:inputType="text"
                             android:id="@+id/et_hp"
                             android:layout_width="match_parent"
@@ -129,8 +127,7 @@
                         </TextView>
 
                         <EditText
-                            android:padding="8dp"
-                            android:background="@drawable/border_edittext"
+                            style="@style/myEditText"
                             android:inputType="text"
                             android:id="@+id/et_kampus_impian"
                             android:layout_width="match_parent"
@@ -151,8 +148,7 @@
                         </TextView>
 
                         <EditText
-                            android:padding="8dp"
-                            android:background="@drawable/border_edittext"
+                            style="@style/myEditText"
                             android:inputType="text"
                             android:id="@+id/et_prodi_impian"
                             android:layout_width="match_parent"
@@ -175,8 +171,7 @@
                         </TextView>
 
                         <EditText
-                            android:padding="8dp"
-                            android:background="@drawable/border_edittext"
+                            style="@style/myEditText"
                             android:inputType="text"
                             android:id="@+id/et_sekolah"
                             android:layout_width="match_parent"
@@ -199,8 +194,7 @@
                         </TextView>
 
                         <EditText
-                            android:padding="8dp"
-                            android:background="@drawable/border_edittext"
+                            style="@style/myEditText"
                             android:inputType="text"
                             android:id="@+id/et_kelas"
                             android:layout_width="match_parent"
@@ -224,8 +218,7 @@
                             android:layout_height="wrap_content">
 
                             <EditText
-                                android:padding="8dp"
-                                android:background="@drawable/border_edittext"
+                                style="@style/myEditText"
                                 android:id="@+id/et_password"
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
@@ -260,8 +253,7 @@
                             android:layout_height="wrap_content">
 
                             <EditText
-                                android:padding="8dp"
-                                android:background="@drawable/border_edittext"
+                                style="@style/myEditText"
                                 android:id="@+id/et_konfirmasi_password"
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"

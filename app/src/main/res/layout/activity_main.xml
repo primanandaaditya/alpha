@@ -18,7 +18,7 @@
         android:layout_height="match_parent">
 
         <androidx.cardview.widget.CardView
-            android:layout_margin="40dp"
+            android:layout_margin="20dp"
             android:background="@color/putih"
             xmlns:card_view="http://schemas.android.com/apk/res-auto"
             android:id="@+id/card_view"
@@ -34,8 +34,9 @@
 
 
                 <TextView
+                    android:textStyle="bold"
                     android:layout_alignParentTop="true"
-                    android:textSize="30dp"
+                    android:textSize="20dp"
                     android:gravity="center_horizontal"
                     android:id="@+id/tv_login"
                     android:text="@string/login"
@@ -64,8 +65,7 @@
                         </TextView>
 
                         <EditText
-                            android:padding="8dp"
-                            android:background="@drawable/border_edittext"
+                            style="@style/myEditText"
                             android:inputType="textEmailAddress"
                             android:id="@+id/et_email"
                             android:layout_width="match_parent"
@@ -90,8 +90,7 @@
                             android:layout_height="wrap_content">
 
                             <EditText
-                                android:padding="8dp"
-                                android:background="@drawable/border_edittext"
+                                style="@style/myEditText"
                                 android:id="@+id/et_password"
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"

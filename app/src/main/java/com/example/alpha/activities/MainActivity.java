@@ -40,14 +40,14 @@ public class MainActivity extends BaseActivity {
         btn_login=findViewById(R.id.btn_login);
 
         //set font
-        this.applyFontRegularToTextView(tv_login);
-        this.applyFontRegularToTextView(tv_email);
-        this.applyFontRegularToTextView(et_email);
-        this.applyFontRegularToTextView(et_password);
-        this.applyFontRegularToTextView(tv_lupapassword);
-        this.applyFontRegularToTextView(tv_belumpunya);
-        this.applyFontRegularToTextView(tv_registrasi);
-        this.applyFontRegularToTextView(btn_login);
+//        this.applyFontRegularToTextView(tv_login);
+//        this.applyFontRegularToTextView(tv_email);
+//        this.applyFontRegularToTextView(et_email);
+//        this.applyFontRegularToTextView(et_password);
+//        this.applyFontRegularToTextView(tv_lupapassword);
+//        this.applyFontRegularToTextView(tv_belumpunya);
+//        this.applyFontRegularToTextView(tv_registrasi);
+//        this.applyFontRegularToTextView(btn_login);
 
         tv_registrasi.setOnClickListener(new View.OnClickListener() {
             @Override

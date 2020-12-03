@@ -5,7 +5,7 @@
     <string name="password" translatable="false">Password</string>
     <string name="lupa_password" translatable="false">Lupa password?</string>
     <string name="belum_punya_akun" translatable="false">Belum punya akun?</string>
-    <string name="registrasi" translatable="false">Registrasi</string>
+    <string name="registrasi" translatable="false">REGISTRASI</string>
     <string name="nama_lengkap" translatable="false">Nama lengkap (*)</string>
     <string name="nomor_hp" translatable="false">Nomor HP (*)</string>
     <string name="kampus_impian" translatable="false">Kampus impian</string>

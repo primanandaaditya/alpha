@@ -3,4 +3,14 @@
     <string name="login" translatable="false">LOGIN</string>
     <string name="email" translatable="false">Email</string>
     <string name="password" translatable="false">Password</string>
+    <string name="lupa_password" translatable="false">Lupa password?</string>
+    <string name="belum_punya_akun" translatable="false">Belum punya akun?</string>
+    <string name="registrasi" translatable="false">Registrasi</string>
+    <string name="nama_lengkap" translatable="false">Nama lengkap (*)</string>
+    <string name="nomor_hp" translatable="false">Nomor HP (*)</string>
+    <string name="kampus_impian" translatable="false">Kampus impian</string>
+    <string name="prodi_impian" translatable="false">Prodi impian</string>
+    <string name="sekolah" translatable="false">Sekolah</string>
+    <string name="kelas" translatable="false">Kelas</string>
+    <string name="konfirmasi_password" translatable="false">Konfirmasi password</string>
 </resources>

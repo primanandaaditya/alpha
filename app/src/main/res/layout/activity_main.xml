@@ -64,7 +64,9 @@
                         </TextView>
 
                         <EditText
-                            android:inputType="text"
+                            android:padding="8dp"
+                            android:background="@drawable/border_edittext"
+                            android:inputType="textEmailAddress"
                             android:id="@+id/et_email"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
@@ -74,6 +76,7 @@
 
 
                         <TextView
+                            android:layout_marginTop="20dp"
                             android:text="@string/password"
                             android:id="@+id/tv_password"
                             android:layout_width="match_parent"
@@ -82,11 +85,14 @@
                         </TextView>
 
                         <RelativeLayout
+
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content">
 
                             <EditText
-                                android:id="@+id/edit_password"
+                                android:padding="8dp"
+                                android:background="@drawable/border_edittext"
+                                android:id="@+id/et_password"
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
                                 android:inputType="textPassword"/>
@@ -101,6 +107,60 @@
                                 android:padding="5dp"
                                 android:src="@drawable/ic_eye" />
                         </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:textColor="@color/colorPrimary"
+                                    android:text="@string/lupa_password"
+                                    android:id="@+id/tv_lupapassword"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:textAlignment="textEnd"
+                                    android:text="@string/belum_punya_akun"
+                                    android:id="@+id/tv_belum_punya_akun"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+
+                                <TextView
+                                    android:textColor="@color/colorPrimary"
+                                    android:textAlignment="textEnd"
+                                    android:text="@string/registrasi"
+                                    android:id="@+id/tv_registrasi"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
 
                     </LinearLayout>
 

@@ -58,5 +58,16 @@ public class MainActivity extends BaseActivity {
                 finish();
             }
         });
+
+        tv_lupapassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, ResetPasswordActivity.class);
+                startActivity(intent);
+                finish();
+
+            }
+        });
     }
 }

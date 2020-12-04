@@ -15,12 +15,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:label="@string/registrasi"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:name=".activities.RegisterActivity"
-            >
+            android:name=".activities.ResetPasswordActivity">
 
         </activity>
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:label="@string/registrasi"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
         <activity
             android:name=".activities.MainActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">

@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Alpha</string>
+    <string name="ok" translatable="false">OK</string>
     <string name="login" translatable="false">LOGIN</string>
     <string name="email" translatable="false">Email</string>
     <string name="password" translatable="false">Password</string>
@@ -13,4 +14,11 @@
     <string name="sekolah" translatable="false">Sekolah</string>
     <string name="kelas" translatable="false">Kelas</string>
     <string name="konfirmasi_password" translatable="false">Konfirmasi password</string>
+    <string name="reset_password" translatable="false">RESET PASSWORD</string>
+    <string name="masukkan_email_anda" translatable="false">Masukkan email Anda dan kami akan mengirimkan link untuk reset password Anda</string>
+    <string name="password_baru" translatable="false">PASSWORD BARU</string>
+    <string name="masukkan_password_baru" translatable="false">Masukkan password baru Anda</string>
+    <string name="password_baru_ast" translatable="false">Password baru (*)</string>
+    <string name="konf_password_baru" translatable="false">Konfirmasi password baru (*)</string>
+
 </resources>

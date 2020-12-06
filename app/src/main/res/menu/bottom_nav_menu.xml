@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_belajar"
+        android:icon="@drawable/ic_belajar"
+        android:title="@string/menu_belajar" />
+
+    <item
+        android:id="@+id/navigation_tryout"
+        android:icon="@drawable/ic_tryout"
+        android:title="@string/menu_tryout" />
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_askgram"
+        android:icon="@drawable/ic_askgram"
+        android:title="@string/menu_askgram" />
+
+    <item
+        android:id="@+id/navigation_akun"
+        android:icon="@drawable/ic_akun"
+        android:title="@string/menu_akun" />
+
+</menu>

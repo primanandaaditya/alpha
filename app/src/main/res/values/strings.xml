@@ -21,5 +21,30 @@
     <string name="masukkan_password_baru" translatable="false">Masukkan password baru Anda</string>
     <string name="password_baru_ast" translatable="false">Password baru (*)</string>
     <string name="konf_password_baru" translatable="false">Konfirmasi password baru (*)</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">User</string>
+    <string name="nav_header_subtitle">About user</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="menu_home">Home</string>
+    <string name="menu_belajar" translatable="false">Belajar</string>
+    <string name="menu_askgram" translatable="false">Askgram</string>
+    <string name="menu_tryout" translatable="false">Tryout</string>
+    <string name="menu_akun" translatable="false">Akun</string>
+
+
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_navigasi">Project Alpha</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 
 </resources>

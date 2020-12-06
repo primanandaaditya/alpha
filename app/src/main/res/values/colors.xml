@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#335eff</color>
-    <color name="colorPrimaryDark">#335efe</color>
-    <color name="colorAccent">#4d70f7</color>
+    <color name="colorPrimary">#2874A6</color>
+    <color name="colorPrimaryDark">#21618C</color>
+    <color name="colorAccent">#5DADE2</color>
     <color name="putih">#FFFFFF</color>
     <color name="hitam">#000000</color>
     <color name="gray">#B1B1B1</color>

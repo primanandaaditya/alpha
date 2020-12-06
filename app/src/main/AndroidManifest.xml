@@ -15,13 +15,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:name=".activities.PasswordBaruActivity">
-
-        </activity>
+            android:name=".activities.NavigasiActivity"
+            android:label="@string/title_activity_navigasi"></activity>
+        <activity
+            android:name=".activities.PasswordBaruActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".activities.ResetPasswordActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".activities.RegisterActivity"
             android:label="@string/registrasi"
@@ -31,6 +32,7 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

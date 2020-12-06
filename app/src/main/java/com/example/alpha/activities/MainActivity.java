@@ -6,6 +6,7 @@ import androidx.room.Room;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.alpha.R;
@@ -16,7 +17,9 @@ import com.example.alpha.room.user.User;
 
 public class MainActivity extends BaseActivity {
 
-    TextView tv_login,tv_email,et_email,tv_password,et_password,tv_lupapassword,tv_belumpunya,tv_registrasi, btn_login;
+    TextView tv_login,tv_email,et_email,tv_password,et_password,tv_lupapassword,tv_belumpunya,tv_registrasi;
+    Button btn_login;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +51,15 @@ public class MainActivity extends BaseActivity {
 //        this.applyFontRegularToTextView(tv_belumpunya);
 //        this.applyFontRegularToTextView(tv_registrasi);
 //        this.applyFontRegularToTextView(btn_login);
+
+        btn_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this, NavigasiActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         tv_registrasi.setOnClickListener(new View.OnClickListener() {
             @Override

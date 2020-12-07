@@ -32,9 +32,9 @@
 
     <fragment
         android:id="@+id/navigation_akun"
-        android:name="com.example.alpha.activities.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:name="com.example.alpha.fragments.AkunFragment"
+        android:label="@string/menu_akun"
+        tools:layout="@layout/fragment_akun" />
 
 
 </navigation>

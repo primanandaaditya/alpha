@@ -25,6 +25,8 @@ class EditAkunActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
+        //jika tombol back ditekan oleh user
+
         val id = item.itemId
         when (id) {
             // Respond to the action bar's Up/Home button

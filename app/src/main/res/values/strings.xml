@@ -53,6 +53,17 @@
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
     <string name="mockup_nama" translatable="false">Elizabeth Tasya</string>
     <string name="mockup_email" translatable="false">elizabeth@gmail.com</string>
+    <string name="rencana_belajar" translatable="false">Rencana Belajar</string>
+    <string name="materi_belajar" translatable="false">Materi Belajar</string>
 
+
+    <string-array name="sp_kelas">
+        <item>X IPA</item>
+        <item>XI IPA</item>
+        <item>XII IPA</item>
+        <item>X IPS</item>
+        <item>XI IPS</item>
+        <item>XII IPS</item>
+    </string-array>
 
 </resources>

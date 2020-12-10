@@ -11,6 +11,7 @@ import android.widget.ImageView
 
 import com.example.alpha.R
 import com.example.alpha.activities.EditAkunActivity
+import com.example.alpha.activities.RencanaBelajarActivity
 
 
 class AkunFragment : Fragment() {
@@ -38,7 +39,8 @@ class AkunFragment : Fragment() {
     fun findID(){
         iv_edit= activity!!.findViewById(R.id.iv_edit)
         iv_edit.setOnClickListener(View.OnClickListener {
-            var intent = Intent(activity, EditAkunActivity::class.java)
+//            var intent = Intent(activity, EditAkunActivity::class.java)
+            var intent = Intent(activity, RencanaBelajarActivity::class.java)
             startActivity(intent)
         })
     }

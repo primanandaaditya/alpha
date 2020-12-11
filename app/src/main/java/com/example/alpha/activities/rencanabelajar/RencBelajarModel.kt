@@ -1,4 +1,4 @@
-package com.example.alpha.models
+package com.example.alpha.activities.rencanabelajar
 
 class RencBelajarModel {
 

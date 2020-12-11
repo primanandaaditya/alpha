@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
@@ -7,271 +8,291 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <TextView
-        android:text="hari"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:id="@+id/tv_hari"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </TextView>
 
-    <TextView
-        android:text="tanggal"
-        android:id="@+id/tv_tanggal"
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </TextView>
+        android:layout_height="match_parent"
+        card_view:cardElevation="2dp"
+        card_view:contentPadding="3dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="20dp">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="20dp">
-
-    </View>
-
-    <TextView
-        android:text="@string/materi_belajar"
-        android:id="@+id/tv_materi_belajar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </TextView>
-
-    <LinearLayout
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
         <LinearLayout
-
-            android:layout_weight="5"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageView
-                android:id="@+id/iv_gambarmapela"
-                android:src="@mipmap/ic_launcher"
-                android:layout_width="40dp"
-                android:layout_height="40dp">
-
-            </ImageView>
-
-        </LinearLayout>
-
-        <LinearLayout
+            android:padding="10dp"
             android:orientation="vertical"
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/tv_namamapela"
-                android:text="Mapel A"
+                android:text="hari"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:id="@+id/tv_hari"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
             </TextView>
 
             <TextView
-                android:id="@+id/tv_ketmapela"
-                android:text="Keterangan Mapel A"
+                android:text="tanggal"
+                android:id="@+id/tv_tanggal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
             </TextView>
 
-        </LinearLayout>
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:gravity="center_horizontal|center_vertical"
-            android:layout_weight="5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:id="@+id/iv_bulat"
-                app:srcCompat="@drawable/ic_bulat"
-                android:layout_width="20dp"
+            <View
+                android:layout_width="match_parent"
                 android:layout_height="20dp">
 
-            </ImageView>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            </View>
 
             <TextView
-                android:textColor="@color/colorPrimaryDark"
-                android:text="sub mapel A"
-                android:id="@+id/tv_submapela"
+                android:text="@string/materi_belajar"
+                android:id="@+id/tv_materi_belajar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-            </TextView>
+                <LinearLayout
 
-        </LinearLayout>
-    </LinearLayout>
+                    android:layout_weight="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-    <View
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="20dp"
-        android:background="@color/gray"
-        android:layout_width="match_parent"
-        android:layout_height="1dp">
+                    <ImageView
+                        android:id="@+id/iv_gambarmapela"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp">
 
-    </View>
+                    </ImageView>
 
-    <LinearLayout
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+                </LinearLayout>
 
-        <LinearLayout
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-            android:layout_weight="5"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tv_namamapela"
+                        android:text="Mapel A"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-            <ImageView
-                android:id="@+id/iv_gambarmapelb"
-                android:src="@mipmap/ic_launcher"
-                android:layout_width="40dp"
-                android:layout_height="40dp">
+                    </TextView>
 
-            </ImageView>
+                    <TextView
+                        android:id="@+id/tv_ketmapela"
+                        android:text="Keterangan Mapel A"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-        </LinearLayout>
+                    </TextView>
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                </LinearLayout>
 
-            <TextView
-                android:id="@+id/tv_namamapelb"
-                android:text="Mapel B"
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-            </TextView>
+                <LinearLayout
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_weight="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/tv_ketmapelb"
-                android:text="Keterangan Mapel B"
+                    <ImageView
+                        android:id="@+id/iv_bulat"
+                        app:srcCompat="@drawable/ic_bulat"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp">
+
+                    </ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="sub mapel A"
+                        android:id="@+id/tv_submapela"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+
+            </View>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-            </TextView>
+                <LinearLayout
 
-        </LinearLayout>
+                    android:layout_weight="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_gambarmapelb"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp">
+
+                    </ImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_namamapelb"
+                        android:text="Mapel B"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tv_ketmapelb"
+                        android:text="Keterangan Mapel B"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
 
 
-    </LinearLayout>
+            </LinearLayout>
 
-    <LinearLayout
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:gravity="center_horizontal|center_vertical"
-            android:layout_weight="5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:layout_gravity="center_vertical|center_horizontal"
-                android:id="@+id/iv_bulat2"
-                app:srcCompat="@drawable/ic_bulat"
-                android:layout_width="20dp"
-                android:layout_height="20dp">
-
-            </ImageView>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:textColor="@color/colorPrimaryDark"
-                android:text="sub mapel B"
-                android:id="@+id/tv_submapelb"
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-            </TextView>
+                <LinearLayout
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_weight="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-        </LinearLayout>
-    </LinearLayout>
+                    <ImageView
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:id="@+id/iv_bulat2"
+                        app:srcCompat="@drawable/ic_bulat"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp">
 
+                    </ImageView>
+                </LinearLayout>
 
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
+                    <TextView
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="sub mapel B"
+                        android:id="@+id/tv_submapelb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-    <View
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="20dp"
-        android:background="@color/gray"
-        android:layout_width="match_parent"
-        android:layout_height="1dp">
+                    </TextView>
 
-    </View>
+                </LinearLayout>
+            </LinearLayout>
 
+            <View
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
 
+            </View>
 
-    <LinearLayout
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:gravity="center_horizontal|center_vertical"
-            android:layout_weight="5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:layout_gravity="center_vertical|center_horizontal"
-                android:id="@+id/iv_bulat3"
-                app:srcCompat="@drawable/ic_bulat"
-                android:layout_width="20dp"
-                android:layout_height="20dp">
-
-            </ImageView>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:textColor="@color/colorPrimaryDark"
-                android:text="Tips lainnya"
-                android:id="@+id/tv_lainnya"
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-            </TextView>
+                <LinearLayout
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_weight="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:id="@+id/iv_bulat3"
+                        app:srcCompat="@drawable/ic_bulat"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp">
+
+                    </ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="Tips lainnya"
+                        android:id="@+id/tv_lainnya"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+            </LinearLayout>
+
 
         </LinearLayout>
-    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
 
 
 

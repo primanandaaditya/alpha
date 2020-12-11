@@ -10,8 +10,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 
 import com.example.alpha.R
-import com.example.alpha.activities.EditAkunActivity
-import com.example.alpha.activities.RencanaBelajarActivity
+import com.example.alpha.activities.rencanabelajar.RencanaBelajarActivity
 
 
 class AkunFragment : Fragment() {

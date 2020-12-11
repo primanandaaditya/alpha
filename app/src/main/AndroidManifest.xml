@@ -16,7 +16,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:label="@string/rencana_belajar"
-            android:name=".activities.RencanaBelajarActivity">
+            android:name=".activities.rencanabelajar.RencanaBelajarActivity">
 
         </activity>
         <activity

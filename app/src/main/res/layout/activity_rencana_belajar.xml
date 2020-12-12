@@ -23,7 +23,7 @@
             xmlns:card_view="http://schemas.android.com/apk/res-auto"
             android:layout_gravity="center_vertical|center_horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             card_view:cardCornerRadius="20dp">
 
             <Spinner
@@ -32,6 +32,8 @@
                 style="@style/Widget.AppCompat.Spinner"
                 android:entries="@array/sp_kelas"
                 android:id="@+id/sp_kelas"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 

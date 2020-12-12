@@ -23,29 +23,94 @@ class RencanaBelajarActivity : AppCompatActivity() {
         var rencanas : MutableList<RencBelajarModel> = mutableListOf<RencBelajarModel>()
         var rencana: RencBelajarModel
 
+
+        //hari senin
         rencana= RencBelajarModel()
         rencana.hari = "Senin"
-        rencana.tanggal="sdfa"
-        rencana.lainnya="faa"
-        rencana.namaMapelA="aa"
-        rencana.ketMapelA=""
-        rencana.subMapelA=""
+        rencana.tanggal="1 Januari 2021"
+        rencana.lainnya="Tips Belajar Hutata"
+        rencana.namaMapelA="Matematika Wajib"
+        rencana.ketMapelA="Statistika Dasar"
+        rencana.subMapelA="Ukuran Letak Data"
         rencana.gambarMapelA=""
-        rencana.namaMapelB="aa"
-        rencana.ketMapelB=""
-        rencana.subMapelB=""
+        rencana.namaMapelB="Kemampuan Kuantitatif"
+        rencana.ketMapelB="Flashcard"
+        rencana.subMapelB="Kecepatan dan Debit"
         rencana.gambarMapelB=""
         rencana.id=1
-
         rencanas.add(rencana)
-        Log.d("jumlah rencana", rencanas.size.toString())
 
+        //hari Selasa
+        rencana= RencBelajarModel()
+        rencana.hari = "Selasa"
+        rencana.tanggal="2 Januari 2021"
+        rencana.lainnya="Belajar Cara Belajar"
+        rencana.namaMapelA="Matematika IPA"
+        rencana.ketMapelA="Analisis Turunan Kedua Fungsi"
+        rencana.subMapelA="Turunan Kedua Fungsi"
+        rencana.gambarMapelA=""
+        rencana.namaMapelB="Penalaran Umum"
+        rencana.ketMapelB="Pernyataan dalam Teks"
+        rencana.subMapelB="Pernyataan Tidak Benar"
+        rencana.gambarMapelB=""
+        rencana.id=2
+        rencanas.add(rencana)
+
+        //hari Rabu
+        rencana= RencBelajarModel()
+        rencana.hari = "Rabu"
+        rencana.tanggal="3 Januari 2020"
+        rencana.lainnya="Tujuan Belajar"
+        rencana.namaMapelA="Kimia"
+        rencana.ketMapelA="Unsur-unsur Golongan Utama"
+        rencana.subMapelA="Keragaman Sifat-sifat Kimia dalam Unsur-unsur Golongan Utama"
+        rencana.gambarMapelA=""
+        rencana.namaMapelB="Bahasa Indonesia"
+        rencana.ketMapelB="Teks Editorial"
+        rencana.subMapelB="Teks Editorial"
+        rencana.gambarMapelB=""
+        rencana.id=3
+        rencanas.add(rencana)
+
+
+        //hari Kamis
+        rencana= RencBelajarModel()
+        rencana.hari = "Kamis"
+        rencana.tanggal="4 Januari 2020"
+        rencana.lainnya="Tips Belajar - Belief System"
+        rencana.namaMapelA="Biologi"
+        rencana.ketMapelA="Pembelahan Sel"
+        rencana.subMapelA="Tipe Pembelahan Sel"
+        rencana.gambarMapelA=""
+        rencana.namaMapelB="Bahasa Inggris"
+        rencana.ketMapelB="Applying for a Job"
+        rencana.subMapelB="Applying for a Job"
+        rencana.gambarMapelB=""
+        rencana.id=4
+        rencanas.add(rencana)
+
+
+        //hari Jumat
+        rencana= RencBelajarModel()
+        rencana.hari = "Jumat"
+        rencana.tanggal="5 Januari 2020"
+        rencana.lainnya="Kamu Tau Nggak? Belajar Fisika"
+        rencana.namaMapelA="Fisika"
+        rencana.ketMapelA="Listrik Arus Bolak-Balik"
+        rencana.subMapelA="Tes Akhir Materi"
+        rencana.gambarMapelA=""
+        rencana.namaMapelB="Kemampuan Kuantitatif"
+        rencana.ketMapelB="Flashcard"
+        rencana.subMapelB="Kecepatan dan Debit"
+        rencana.gambarMapelB=""
+        rencana.id=5
+        rencanas.add(rencana)
 
         rv.apply {
             layoutManager = LinearLayoutManager(this@RencanaBelajarActivity, LinearLayoutManager.HORIZONTAL, false)
 
         }
-        var adapter=rbAdapter(rencanas)
+        var adapter=RencanaBelajarAdapter.RVData(rencanas)
         rv.adapter = adapter
 
 

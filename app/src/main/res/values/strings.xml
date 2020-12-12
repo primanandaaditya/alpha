@@ -55,6 +55,7 @@
     <string name="mockup_email" translatable="false">elizabeth@gmail.com</string>
     <string name="rencana_belajar" translatable="false">Rencana Belajar</string>
     <string name="materi_belajar" translatable="false">Materi Belajar</string>
+    <string name="materi_utbk" translatable="false">Materi UTBK</string>
 
 
     <string-array name="sp_kelas">

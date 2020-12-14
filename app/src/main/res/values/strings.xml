@@ -30,6 +30,15 @@
     <string name="action_settings">Settings</string>
 
 
+    <string name="fisika" translatable="false">Fisika</string>
+    <string name="kimia" translatable="false">Kimia</string>
+    <string name="biologi" translatable="false">Biologi</string>
+    <string name="matematika" translatable="false">Matematika</string>
+    <string name="bahasa_inggris" translatable="false">Bahasa Inggris</string>
+    <string name="bahasa_indonesia" translatable="false">Bahasa Indonesia</string>
+    <string name="matematika_ipa" translatable="false">Matematika IPA</string>
+    <string name="sejarah_wajib" translatable="false">Sejarah wajib</string>
+
     <string name="menu_home">Home</string>
     <string name="menu_belajar" translatable="false">Belajar</string>
     <string name="menu_askgram" translatable="false">Askgram</string>
@@ -37,6 +46,7 @@
     <string name="menu_akun" translatable="false">Akun</string>
 
 
+    <string name="mata_pelajaran" translatable="false">Mata pelajaran</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="menu_tools">Tools</string>

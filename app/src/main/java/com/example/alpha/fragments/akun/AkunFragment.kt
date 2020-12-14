@@ -1,4 +1,4 @@
-package com.example.alpha.fragments
+package com.example.alpha.fragments.akun
 
 
 import android.content.Intent

@@ -11,15 +11,12 @@ import com.example.alpha.R
 class rbAdapter(private val dataSet: MutableList<RencBelajarModel>) :
         RecyclerView.Adapter<rbAdapter.ViewHolder>() {
 
-    /**
-     * Provide a reference to the type of views that you are using
-     * (custom ViewHolder).
-     */
+
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val textView: TextView
 
         init {
-            // Define click listener for the ViewHolder's View.
+
             textView = view.findViewById(R.id.tv_hari)
         }
     }

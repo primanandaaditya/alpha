@@ -13,9 +13,9 @@
 
     <fragment
         android:id="@+id/navigation_tryout"
-        android:name="com.example.alpha.activities.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:name="com.example.alpha.fragments.to.ToFragment"
+        android:label="@string/menu_tryout"
+        tools:layout="@layout/fragment_to" />
 
     <fragment
         android:id="@+id/navigation_home"
@@ -32,7 +32,7 @@
 
     <fragment
         android:id="@+id/navigation_akun"
-        android:name="com.example.alpha.fragments.AkunFragment"
+        android:name="com.example.alpha.fragments.akun.AkunFragment"
         android:label="@string/menu_akun"
         tools:layout="@layout/fragment_akun" />
 

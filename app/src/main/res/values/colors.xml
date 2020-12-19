@@ -6,4 +6,11 @@
     <color name="putih">#FFFFFF</color>
     <color name="hitam">#000000</color>
     <color name="gray">#B1B1B1</color>
+
+    <color name="hitam1">#30302C</color>
+    <color name="hitam2">#45413A</color>
+    <color name="kuning">#F7DB4C</color>
+    <color name="pink1">#E4DAC6</color>
+    <color name="hijau">#CDCDB3</color>
+    <color name="pink2">#F1EFDE</color>
 </resources>

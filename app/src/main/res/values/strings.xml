@@ -28,7 +28,9 @@
     <string name="nav_header_subtitle">About user</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-
+    <string name="bank_soal" translatable="false">Bank soal</string>
+    <string name="tryout" translatable="false">Try Out</string>
+    <string name="buka" translatable="false">Buka</string>
 
     <string name="fisika" translatable="false">Fisika</string>
     <string name="kimia" translatable="false">Kimia</string>

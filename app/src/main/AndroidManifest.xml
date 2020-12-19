@@ -15,13 +15,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:label="@string/rencana_belajar"
-            android:name=".activities.rencanabelajar.RencanaBelajarActivity">
+            android:label="@string/tryout"
+            android:name=".activities.to.ToActivity">
 
         </activity>
         <activity
+            android:name=".activities.rencanabelajar.RencanaBelajarActivity"
+            android:label="@string/rencana_belajar"></activity>
+        <activity
             android:name=".activities.EditAkunActivity"
-            android:label="@string/edit_akun"></activity>
+            android:label="@string/edit_akun" />
         <activity
             android:name=".activities.NavigasiActivity"
             android:label="@string/title_activity_navigasi" />

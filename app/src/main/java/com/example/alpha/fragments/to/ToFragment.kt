@@ -1,11 +1,13 @@
 package com.example.alpha.fragments.to
 
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView
 import android.widget.GridView
 import android.widget.Toast
 
@@ -13,6 +15,8 @@ import com.example.alpha.R
 import com.example.alpha.activities.ui.home.HomeAdapter
 import com.example.alpha.activities.ui.home.HomeModel
 import java.util.ArrayList
+import android.widget.AdapterView.OnItemClickListener
+import com.example.alpha.activities.to.ToActivity
 
 
 class ToFragment : Fragment() {
@@ -84,6 +88,11 @@ class ToFragment : Fragment() {
 
         val menuAdapter = MapelAdapter(activity, homeModels)
         gridview.setAdapter(menuAdapter)
+
+        gridview.setOnItemClickListener(OnItemClickListener { parent, view, position, id ->
+            var intent= Intent(activity, ToActivity::class.java)
+            startActivity(intent)
+        })
     }
 
 }

@@ -26,9 +26,9 @@
 
     <fragment
         android:id="@+id/navigation_askgram"
-        android:name="com.example.alpha.activities.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:name="com.example.alpha.fragments.askgram.AskgramFragment"
+        android:label="@string/menu_askgram"
+        tools:layout="@layout/fragment_askgram" />
 
     <fragment
         android:id="@+id/navigation_akun"

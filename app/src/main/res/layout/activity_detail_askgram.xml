@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    android:padding="20dp"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    android:paddingBottom="50dp"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragments.askgram.AskgramFragment">
-
+    tools:context=".activities.askgram.DetailAskgramActivity">
 
     <ScrollView
-
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
         <LinearLayout
-
-            android:padding="20dp"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -28,266 +25,6 @@
                 android:layout_height="wrap_content">
 
                 <LinearLayout
-                    android:padding="20dp"
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <LinearLayout
-                            android:orientation="vertical"
-                            android:layout_weight="7"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                            <de.hdodenhof.circleimageview.CircleImageView
-                                android:src="@mipmap/ic_murid1"
-                                app:civ_border_width="1dp"
-                                app:civ_border_color="@color/colorPrimary"
-                                android:layout_width="30dp"
-                                android:layout_height="30dp">
-
-                            </de.hdodenhof.circleimageview.CircleImageView>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:orientation="vertical"
-                            android:layout_weight="1"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <TextView
-                                android:gravity="center_vertical"
-                                android:text="Ros Situmorang"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
-
-                            </TextView>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="10dp"></View>
-
-                    <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:textStyle="bold"
-                            android:textSize="30dp"
-                            android:text="Dimanakah ibukota Indonesia?"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                        </TextView>
-
-                    </LinearLayout>
-
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="10dp"></View>
-
-                    <LinearLayout
-
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <ImageView
-                            android:layout_margin="5dp"
-                            app:srcCompat="@drawable/ic_like"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp">
-
-                        </ImageView>
-
-                        <ImageView
-                            android:layout_margin="5dp"
-                            app:srcCompat="@drawable/ic_comment"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp">
-
-                        </ImageView>
-
-
-                        <ImageView
-                            android:layout_margin="5dp"
-                            app:srcCompat="@drawable/ic_tag"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp">
-
-                        </ImageView>
-
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="10dp"></View>
-
-                    <TextView
-                        android:textSize="10dp"
-                        android:text="1 jam yang lalu"
-                        android:textColor="@color/gray"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                    </TextView>
-
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:layout_marginTop="10dp"
-                app:cardCornerRadius="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:padding="20dp"
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <LinearLayout
-                            android:orientation="vertical"
-                            android:layout_weight="7"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                            <de.hdodenhof.circleimageview.CircleImageView
-                                android:src="@mipmap/ic_murid2"
-                                app:civ_border_width="1dp"
-                                app:civ_border_color="@color/colorPrimary"
-                                android:layout_width="30dp"
-                                android:layout_height="30dp">
-
-                            </de.hdodenhof.circleimageview.CircleImageView>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:orientation="vertical"
-                            android:layout_weight="1"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <TextView
-                                android:gravity="center_vertical"
-                                android:text="Cindy Harahap"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
-
-                            </TextView>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="10dp"></View>
-
-                    <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:textStyle="bold"
-                            android:textSize="30dp"
-                            android:text="Penemu gaya gravitasi siapa ya?"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                        </TextView>
-
-                    </LinearLayout>
-
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="10dp"></View>
-
-                    <LinearLayout
-
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <ImageView
-                            android:layout_margin="5dp"
-                            app:srcCompat="@drawable/ic_like"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp">
-
-                        </ImageView>
-
-                        <ImageView
-                            android:layout_margin="5dp"
-                            app:srcCompat="@drawable/ic_comment"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp">
-
-                        </ImageView>
-
-
-                        <ImageView
-                            android:layout_margin="5dp"
-                            app:srcCompat="@drawable/ic_tag"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp">
-
-                        </ImageView>
-
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="10dp"></View>
-
-                    <TextView
-                        android:textSize="10dp"
-                        android:text="2 jam yang lalu"
-                        android:textColor="@color/gray"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                    </TextView>
-
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cv"
-                android:layout_marginTop="10dp"
-                app:cardCornerRadius="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:id="@+id/ll"
                     android:padding="20dp"
                     android:orientation="vertical"
                     android:layout_width="match_parent"
@@ -366,12 +103,13 @@
                         android:layout_height="10dp"></View>
 
                     <LinearLayout
-
+                        android:gravity="end"
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
                         <ImageView
+
                             android:layout_margin="5dp"
                             app:srcCompat="@drawable/ic_like"
                             android:layout_width="20dp"
@@ -404,6 +142,126 @@
                         android:layout_width="match_parent"
                         android:layout_height="10dp"></View>
 
+                    <View
+                        android:background="@color/gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"></View>
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:src="@mipmap/ic_murid3"
+                                app:civ_border_width="1dp"
+                                app:civ_border_color="@color/colorPrimary"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp">
+
+                            </de.hdodenhof.circleimageview.CircleImageView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="12dp"
+                                android:text="Joko Prasetyo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                            <TextView
+                                android:textSize="10dp"
+                                android:textColor="@color/gray"
+                                android:text="Cari aja di Google, banyak kok!"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"></View>
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:src="@mipmap/ic_murid2"
+                                app:civ_border_width="1dp"
+                                app:civ_border_color="@color/colorPrimary"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp">
+
+                            </de.hdodenhof.circleimageview.CircleImageView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="12dp"
+                                android:text="Cindy Harahap"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                            <TextView
+                                android:textSize="10dp"
+                                android:textColor="@color/gray"
+                                android:text="Jawabnya B"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"></View>
+
                     <TextView
                         android:textSize="10dp"
                         android:text="2 jam yang lalu"
@@ -418,13 +276,11 @@
 
             </androidx.cardview.widget.CardView>
 
-
-
-
         </LinearLayout>
-
     </ScrollView>
 
 
 
-</FrameLayout>
+
+
+</LinearLayout>

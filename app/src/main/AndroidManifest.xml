@@ -15,13 +15,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:label="@string/tryout"
-            android:name=".activities.to.ToActivity">
+            android:label="Detail Post"
+            android:name=".activities.askgram.DetailAskgramActivity">
 
         </activity>
         <activity
+            android:name=".activities.to.ToActivity"
+            android:label="@string/tryout"></activity>
+        <activity
             android:name=".activities.rencanabelajar.RencanaBelajarActivity"
-            android:label="@string/rencana_belajar"></activity>
+            android:label="@string/rencana_belajar" />
         <activity
             android:name=".activities.EditAkunActivity"
             android:label="@string/edit_akun" />

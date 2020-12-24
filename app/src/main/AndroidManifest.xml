@@ -15,13 +15,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:label="Detail Post"
-            android:name=".activities.askgram.DetailAskgramActivity">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name=".activities.splash.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
+            android:name=".activities.askgram.DetailAskgramActivity"
+            android:label="Detail Post"></activity>
+        <activity
             android:name=".activities.to.ToActivity"
-            android:label="@string/tryout"></activity>
+            android:label="@string/tryout" />
         <activity
             android:name=".activities.rencanabelajar.RencanaBelajarActivity"
             android:label="@string/rencana_belajar" />
@@ -44,11 +51,7 @@
         <activity
             android:name=".activities.MainActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

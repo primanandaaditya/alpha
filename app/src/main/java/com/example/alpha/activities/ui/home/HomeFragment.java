@@ -59,6 +59,26 @@ public class HomeFragment extends Fragment {
         homeModels.add(homeModel);
 
         homeModel = new HomeModel();
+        homeModel.setGambar(R.drawable.ic_video);
+        homeModel.setKeterangan(getResources().getString(R.string.menu_video_trial_soal));
+        homeModels.add(homeModel);
+
+        homeModel = new HomeModel();
+        homeModel.setGambar(R.drawable.ic_weekly_chalenge);
+        homeModel.setKeterangan(getResources().getString(R.string.menu_weekly_challenge));
+        homeModels.add(homeModel);
+
+        homeModel = new HomeModel();
+        homeModel.setGambar(R.drawable.ic_leaderboard);
+        homeModel.setKeterangan(getResources().getString(R.string.menu_leaderboard));
+        homeModels.add(homeModel);
+
+        homeModel = new HomeModel();
+        homeModel.setGambar(R.drawable.ic_konsultasi);
+        homeModel.setKeterangan(getResources().getString(R.string.menu_konsultasi));
+        homeModels.add(homeModel);
+
+        homeModel = new HomeModel();
         homeModel.setGambar(R.drawable.ic_akun);
         homeModel.setKeterangan(getResources().getString(R.string.menu_akun));
         homeModels.add(homeModel);

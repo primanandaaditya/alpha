@@ -14,12 +14,12 @@ import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import androidx.core.content.ContextCompat.getSystemService
 
 import android.os.Handler
+import com.example.alpha.helper.Constants
 
 
 class SplashActivity : AppCompatActivity() {
 
-    /*Duration of wait*/
-    private val SPLASH_DISPLAY_LENGTH: Long = 3000
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,7 +30,7 @@ class SplashActivity : AppCompatActivity() {
             val mainIntent = Intent(this@SplashActivity, MainActivity::class.java)
             startActivity(mainIntent)
             finish()
-        }, SPLASH_DISPLAY_LENGTH)
+        }, Constants.SPLASH_SCREEN_TIME)
 
     }
 }

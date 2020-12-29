@@ -61,11 +61,9 @@
             android:layout_height="match_parent"
             card_view:cardCornerRadius="30dp">
 
-
-
             <androidx.recyclerview.widget.RecyclerView
                 tools:listitem="@layout/list_renc_belajar"
-                android:layout_margin="5dp"
+                android:layout_margin="20dp"
                 android:id="@+id/rv"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">

@@ -94,29 +94,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <ImageView
-                    android:id="@+id/iv_edit"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_gravity="end"
-                    app:srcCompat="@drawable/ic_edit"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp">
 
-                </ImageView>
 
                 <TableLayout
                     android:layout_marginTop="20dp"
                     android:padding="10dp"
-                    android:stretchColumns="1"
+                    android:stretchColumns="2"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content">
 
                     <TableRow>
                         <TextView
                             android:layout_column="1"
                             android:text="@string/kampus_impian"
                             android:padding="3dip" />
+
+
                         <TextView
                             android:text=": Institut ITB"
                             android:gravity="left"
@@ -158,6 +151,21 @@
                     </TableRow>
 
                 </TableLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"></View>
+
+                <Button
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/putih"
+                    android:background="@drawable/rounded_blue_button"
+                    android:id="@+id/btn_edit"
+                    android:text="@string/edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </Button>
 
 
             </LinearLayout>

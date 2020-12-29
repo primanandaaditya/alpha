@@ -16,12 +16,16 @@ import com.example.alpha.activities.ui.home.HomeAdapter
 import com.example.alpha.activities.ui.home.HomeModel
 import java.util.ArrayList
 import android.widget.AdapterView.OnItemClickListener
+import android.widget.ImageView
+import com.example.alpha.activities.rencanabelajar.RencanaBelajarActivity
 import com.example.alpha.activities.to.ToActivity
 
 
 class ToFragment : Fragment() {
 
     private lateinit var gridview: GridView
+    private lateinit var iv_kalender: ImageView
+    private lateinit var iv_jam: ImageView
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -30,7 +34,22 @@ class ToFragment : Fragment() {
         val root = inflater.inflate(R.layout.fragment_to, container, false)
 
         gridview = root.findViewById(R.id.gridview) as GridView
+        iv_kalender= root.findViewById(R.id.iv_kalender)
+        iv_jam= root.findViewById(R.id.iv_jam)
+
+        iv_kalender.setOnClickListener( View.OnClickListener {
+            var intent=Intent(activity, RencanaBelajarActivity::class.java)
+            startActivity(intent)
+        })
+
+        iv_jam.setOnClickListener(View.OnClickListener {
+            var intent=Intent(activity, RencanaBelajarActivity::class.java)
+            startActivity(intent)
+        })
+
         buildMenu()
+        findID()
+
         return root
 
     }
@@ -38,6 +57,10 @@ class ToFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
+
+    }
+
+    internal fun findID(){
 
     }
 

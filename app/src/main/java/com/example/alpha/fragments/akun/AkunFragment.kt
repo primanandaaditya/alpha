@@ -7,15 +7,17 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 
 import com.example.alpha.R
+import com.example.alpha.activities.EditAkunActivity
 import com.example.alpha.activities.rencanabelajar.RencanaBelajarActivity
 
 
 class AkunFragment : Fragment() {
 
-    private lateinit var iv_edit: ImageView
+    private lateinit var btnedit: Button
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -36,10 +38,10 @@ class AkunFragment : Fragment() {
     }
 
     fun findID(){
-        iv_edit= activity!!.findViewById(R.id.iv_edit)
-        iv_edit.setOnClickListener(View.OnClickListener {
+        btnedit= activity!!.findViewById(R.id.btn_edit)
+        btnedit.setOnClickListener(View.OnClickListener {
 //            var intent = Intent(activity, EditAkunActivity::class.java)
-            var intent = Intent(activity, RencanaBelajarActivity::class.java)
+            var intent = Intent(activity, EditAkunActivity::class.java)
             startActivity(intent)
         })
     }

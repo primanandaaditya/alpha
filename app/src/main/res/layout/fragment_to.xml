@@ -98,7 +98,7 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="5dp">
+                android:layout_height="10dp">
             </View>
 
             <androidx.cardview.widget.CardView
@@ -121,7 +121,7 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="5dp">
+                android:layout_height="10dp">
             </View>
 
             <androidx.cardview.widget.CardView
@@ -191,7 +191,7 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="5dp"></View>
+                android:layout_height="10dp"></View>
 
 
             <LinearLayout
@@ -240,11 +240,13 @@
                                     android:layout_height="wrap_content">
 
                                     <ImageView
+                                        android:id="@+id/iv_kalender"
+                                        android:layout_gravity="center_vertical|center_horizontal"
                                         android:scaleType="fitXY"
                                         app:srcCompat="@drawable/ic_kalender"
                                         android:layout_weight="1"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="70dp">
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp">
 
                                     </ImageView>
 
@@ -258,10 +260,12 @@
                                     android:layout_height="wrap_content">
 
                                     <ImageView
+                                        android:id="@+id/iv_jam"
+                                        android:layout_gravity="center_horizontal|center_vertical"
                                         app:srcCompat="@drawable/ic_jam"
                                         android:layout_weight="1"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="70dp">
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp">
 
                                     </ImageView>
                                 </LinearLayout>
@@ -320,11 +324,11 @@
                                     android:layout_height="wrap_content">
 
                                     <ImageView
-
-                                        app:srcCompat="@drawable/ic_materi_utbk"
+                                        android:layout_gravity="center_vertical|center_horizontal"
+                                        app:srcCompat="@drawable/ic_materi"
                                         android:layout_weight="1"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="70dp">
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp">
 
                                     </ImageView>
 

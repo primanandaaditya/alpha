@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/navigation_belajar"
-        android:name="com.example.alpha.activities.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:name="com.example.alpha.fragments.belajar.BelajarFragment"
+        android:label="@string/menu_belajar"
+        tools:layout="@layout/fragment_belajar" />
 
     <fragment
         android:id="@+id/navigation_tryout"

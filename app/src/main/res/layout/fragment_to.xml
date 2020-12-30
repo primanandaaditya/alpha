@@ -101,31 +101,9 @@
                 android:layout_height="10dp">
             </View>
 
-            <androidx.cardview.widget.CardView
-                android:background="@color/putih"
-                app:cardCornerRadius="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <androidx.appcompat.widget.SearchView
-
-                    android:id="@+id/sv"
-                    app:queryHint="Pencarian"
-                    app:defaultQueryHint="Pencarian"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                </androidx.appcompat.widget.SearchView>
-
-            </androidx.cardview.widget.CardView>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="10dp">
-            </View>
 
             <androidx.cardview.widget.CardView
-                android:background="@color/putih"
+
                 app:cardCornerRadius="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -135,227 +113,198 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
+
+
                     <LinearLayout
-                        android:padding="10dp"
+
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
                         <LinearLayout
-                            android:layout_weight="1"
+                            android:paddingTop="10dp"
+                            android:layout_marginBottom="10dp"
                             android:orientation="vertical"
+                            android:layout_weight="1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
+                            <ImageView
+
+                                app:srcCompat="@drawable/ic_bank_soal"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp">
+
+                            </ImageView>
+
                             <TextView
-                                android:text="@string/mata_pelajaran"
+                                android:textAlignment="center"
+                                android:text="@string/bank_soal"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content">
 
                             </TextView>
 
+
+
                         </LinearLayout>
 
                         <LinearLayout
-                            android:layout_weight="1"
+                            android:paddingTop="10dp"
+                            android:layout_marginBottom="10dp"
                             android:orientation="vertical"
+                            android:layout_weight="1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
-                            <Spinner
-                                android:id="@+id/sp_mata_pelajaran"
-                                android:entries="@array/sp_kelas"
+                            <ImageView
+
+                                app:srcCompat="@drawable/ic_tryout"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp">
+
+                            </ImageView>
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="@string/tryout"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content">
 
-                            </Spinner>
+                            </TextView>
+
+
+
                         </LinearLayout>
+
+
+
+
 
                     </LinearLayout>
 
-                    <GridView
-                        android:id="@+id/gridview"
-                        android:layout_width="match_parent"
-                        android:layout_height="200dp"
-                        android:columnWidth="100dp"
-
-                        android:gravity="center"
-                        android:layout_marginBottom="20dp"
-                        android:numColumns="4" />
-
                 </LinearLayout>
-
-
 
             </androidx.cardview.widget.CardView>
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="10dp"></View>
+                android:layout_height="10dp">
+            </View>
 
 
-            <LinearLayout
-                android:orientation="horizontal"
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-
                 <LinearLayout
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <androidx.cardview.widget.CardView
-
-                        app:cardCornerRadius="10dp"
+                    <TextView
+                        android:layout_marginBottom="20dp"
+                        android:textStyle="bold"
+                        android:text="Try Out UTBK #1 - Saintek"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
-                        <LinearLayout
-                            android:orientation="vertical"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                    </TextView>
 
-                            <TextView
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="10dp"
-                                android:textAlignment="center"
-                                android:text="@string/rencana_belajar"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Pengerjaan :"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-                            </TextView>
+                    </TextView>
 
-                            <LinearLayout
-                                android:layout_marginBottom="10dp"
-                                android:orientation="horizontal"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/gray"
+                        android:text="1 Desember 2020 s/d 2 Desember 2020"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-                                <LinearLayout
-                                    android:orientation="vertical"
-                                    android:layout_weight="1"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content">
+                    </TextView>
 
-                                    <ImageView
-                                        android:id="@+id/iv_kalender"
-                                        android:layout_gravity="center_vertical|center_horizontal"
-                                        android:scaleType="fitXY"
-                                        app:srcCompat="@drawable/ic_kalender"
-                                        android:layout_weight="1"
-                                        android:layout_width="60dp"
-                                        android:layout_height="60dp">
+                    <Button
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/putih"
+                        android:background="@drawable/rounded_blue_button"
+                        android:text="@string/buka"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
 
-                                    </ImageView>
-
-
-
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_weight="1"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content">
-
-                                    <ImageView
-                                        android:id="@+id/iv_jam"
-                                        android:layout_gravity="center_horizontal|center_vertical"
-                                        app:srcCompat="@drawable/ic_jam"
-                                        android:layout_weight="1"
-                                        android:layout_width="60dp"
-                                        android:layout_height="60dp">
-
-                                    </ImageView>
-                                </LinearLayout>
-
-
-
-
-
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
+                    </Button>
 
                 </LinearLayout>
 
+            </androidx.cardview.widget.CardView>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp">
+            </View>
+
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
                 <LinearLayout
-                    android:layout_marginLeft="5dp"
-                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <androidx.cardview.widget.CardView
-
-                        app:cardCornerRadius="10dp"
+                    <TextView
+                        android:layout_marginBottom="20dp"
+                        android:textStyle="bold"
+                        android:text="Try Out UTBK #2 - IPA"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
-                        <LinearLayout
-                            android:orientation="vertical"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                    </TextView>
 
-                            <TextView
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="10dp"
-                                android:textAlignment="center"
-                                android:text="@string/materi_utbk"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Pengerjaan :"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-                            </TextView>
+                    </TextView>
 
-                            <LinearLayout
+                    <TextView
+                        android:textColor="@color/gray"
+                        android:text="3 Desember 2020 s/d 4 Desember 2020"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-                                android:orientation="horizontal"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
+                    </TextView>
 
-                                <LinearLayout
-                                    android:layout_marginBottom="10dp"
-                                    android:orientation="vertical"
-                                    android:layout_weight="1"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/putih"
+                        android:background="@drawable/rounded_blue_button"
+                        android:text="@string/buka"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
 
-                                    <ImageView
-                                        android:layout_gravity="center_vertical|center_horizontal"
-                                        app:srcCompat="@drawable/ic_materi"
-                                        android:layout_weight="1"
-                                        android:layout_width="60dp"
-                                        android:layout_height="60dp">
-
-                                    </ImageView>
-
-
-
-                                </LinearLayout>
-
-
-
-
-
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
+                    </Button>
 
                 </LinearLayout>
 
-
-            </LinearLayout>
-
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
 
     </ScrollView>
-
 
 
 </FrameLayout>

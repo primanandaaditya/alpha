@@ -47,7 +47,7 @@
     <string name="menu_belajar" translatable="false">Belajar</string>
     <string name="menu_askgram" translatable="false">Askgram</string>
     <string name="menu_video_trial_soal" translatable="false">Video trial soal</string>
-    <string name="menu_weekly_challenge" translatable="false">Weekly chalenge</string>
+    <string name="menu_weekly_challenge" translatable="false">Weekly challenge</string>
     <string name="menu_tryout" translatable="false">Tryout</string>
     <string name="menu_konsultasi" translatable="false">Konsultasi</string>
     <string name="menu_leaderboard" translatable="false">Leaderboard</string>

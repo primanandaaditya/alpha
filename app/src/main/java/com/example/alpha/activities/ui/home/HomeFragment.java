@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.TextView;
 
@@ -14,6 +15,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.alpha.R;
+import com.example.alpha.interfaces.IHome;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +24,11 @@ import java.util.List;
 public class HomeFragment extends Fragment {
 
     GridView gridView;
+    IHome iHome;
+
+//    public HomeFragment(IHome iHome) {
+//        this.iHome = iHome;
+//    }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -85,5 +92,14 @@ public class HomeFragment extends Fragment {
 
         HomeAdapter homeAdapter=new HomeAdapter(getActivity(), homeModels);
         gridView.setAdapter(homeAdapter);
+
+//        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                if (position==0){
+//                    iHome.callBelajar();
+//                }
+//            }
+//        });
     }
 }

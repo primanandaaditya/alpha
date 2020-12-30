@@ -15,6 +15,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.alpha.R;
+import com.example.alpha.activities.NavigasiActivity;
 import com.example.alpha.interfaces.IHome;
 
 import java.util.ArrayList;
@@ -93,13 +94,33 @@ public class HomeFragment extends Fragment {
         HomeAdapter homeAdapter=new HomeAdapter(getActivity(), homeModels);
         gridView.setAdapter(homeAdapter);
 
-//        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                if (position==0){
-//                    iHome.callBelajar();
-//                }
-//            }
-//        });
+        final NavigasiActivity navigasiActivity = (NavigasiActivity) getActivity();
+
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch (position){
+                    case 0:
+                        navigasiActivity.callBelajar();
+                        break;
+
+                    case 1:
+                        navigasiActivity.callTryout();
+                        break;
+
+                    case 2:
+                        navigasiActivity.callAskgram();
+                        break;
+
+                    case 7:
+                        navigasiActivity.callAkun();
+                        break;
+
+                        default:
+                            navigasiActivity.callHome();
+
+                }
+            }
+        });
     }
 }

@@ -29,21 +29,6 @@ public class NavigasiActivity extends AppCompatActivity implements IHome {
         setContentView(R.layout.activity_navigasi);
 
         navView = findViewById(R.id.nav_view);
-//        navView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-//            @Override
-//            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-//
-//                switch (menuItem.getItemId()) {
-//                    case R.id.navigation_home:
-//                        callHome();
-//                    case R.id.navigation_belajar:
-//                        callBelajar();
-//                }
-//
-//                return false;
-//            }
-//        });
-
 
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.navigation_belajar,
@@ -58,8 +43,6 @@ public class NavigasiActivity extends AppCompatActivity implements IHome {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
 
-//        HomeFragment homeFragment=new HomeFragment(this);
-//        loadFragment(homeFragment);
     }
 
     private boolean loadFragment(Fragment fragment) {
@@ -76,19 +59,17 @@ public class NavigasiActivity extends AppCompatActivity implements IHome {
 
     @Override
     public void callBelajar() {
-        BelajarFragment belajarFragment=new BelajarFragment();
-        loadFragment(belajarFragment);
-        navView.setSelectedItemId(0);
+       navView.setSelectedItemId(R.id.navigation_belajar);
     }
 
     @Override
     public void callTryout() {
-
+        navView.setSelectedItemId(R.id.navigation_tryout);
     }
 
     @Override
     public void callAskgram() {
-
+        navView.setSelectedItemId(R.id.navigation_askgram);
     }
 
     @Override
@@ -113,7 +94,7 @@ public class NavigasiActivity extends AppCompatActivity implements IHome {
 
     @Override
     public void callAkun() {
-
+        navView.setSelectedItemId(R.id.navigation_akun);
     }
 
     @Override

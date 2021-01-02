@@ -33,6 +33,7 @@
     <string name="bank_soal" translatable="false">Bank soal</string>
     <string name="tryout" translatable="false">Try Out</string>
     <string name="buka" translatable="false">Buka</string>
+    <string name="pencarian_tidak_ditemukan" translatable="false">Pencarian tidak ditemukan</string>
 
     <string name="fisika" translatable="false">Fisika</string>
     <string name="kimia" translatable="false">Kimia</string>

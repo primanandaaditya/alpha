@@ -12,6 +12,7 @@ import android.widget.GridView
 import android.widget.ImageView
 
 import com.example.alpha.R
+import com.example.alpha.activities.materibelajar.MateriBelajarActivity
 import com.example.alpha.activities.rencanabelajar.RencanaBelajarActivity
 import com.example.alpha.activities.to.ToActivity
 import com.example.alpha.activities.ui.home.HomeModel
@@ -24,6 +25,7 @@ class BelajarFragment : Fragment() {
     private lateinit var gridview: GridView
     private lateinit var iv_kalender: ImageView
     private lateinit var iv_jam: ImageView
+    private lateinit var iv_materi: ImageView
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -33,6 +35,12 @@ class BelajarFragment : Fragment() {
         gridview = root.findViewById(R.id.gridview) as GridView
         iv_kalender= root.findViewById(R.id.iv_kalender)
         iv_jam= root.findViewById(R.id.iv_jam)
+        iv_materi=root.findViewById(R.id.iv_materi)
+
+        iv_materi.setOnClickListener(View.OnClickListener {
+            var intent=Intent(activity, MateriBelajarActivity::class.java)
+            startActivity(intent)
+        })
 
         iv_kalender.setOnClickListener( View.OnClickListener {
             var intent=Intent(activity, RencanaBelajarActivity::class.java)

@@ -324,6 +324,7 @@
                                     android:layout_height="wrap_content">
 
                                     <ImageView
+                                        android:id="@+id/iv_materi"
                                         android:layout_gravity="center_vertical|center_horizontal"
                                         app:srcCompat="@drawable/ic_materi"
                                         android:layout_weight="1"

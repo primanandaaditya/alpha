@@ -15,8 +15,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:theme="@style/AppTheme.NoActionBar"
-            android:name=".activities.splash.SplashActivity">
+            android:label="@string/materi_belajar"
+            android:name=".activities.materibelajar.MateriBelajarActivity">
+
+        </activity>
+        <activity
+            android:name=".activities.splash.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,7 +30,7 @@
         </activity>
         <activity
             android:name=".activities.askgram.DetailAskgramActivity"
-            android:label="Detail Post"></activity>
+            android:label="Detail Post" />
         <activity
             android:name=".activities.to.ToActivity"
             android:label="@string/tryout" />
@@ -50,9 +55,7 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".activities.MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-
-        </activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
     </application>
 
 </manifest>

@@ -17,12 +17,14 @@ import com.example.alpha.activities.ui.home.HomeModel
 import java.util.ArrayList
 import android.widget.AdapterView.OnItemClickListener
 import android.widget.ImageView
+import com.example.alpha.activities.list_tryout.ListTryoutActivity
 import com.example.alpha.activities.rencanabelajar.RencanaBelajarActivity
 import com.example.alpha.activities.to.ToActivity
 
 
 class ToFragment : Fragment() {
 
+    private lateinit var iv_tryout: ImageView
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -31,6 +33,11 @@ class ToFragment : Fragment() {
         val root = inflater.inflate(R.layout.fragment_to, container, false)
 
 
+        iv_tryout=root.findViewById(R.id.iv_tryout)
+        iv_tryout.setOnClickListener(View.OnClickListener {
+            var intent=Intent(activity, ListTryoutActivity::class.java)
+            startActivity(intent)
+        })
         return root
 
     }

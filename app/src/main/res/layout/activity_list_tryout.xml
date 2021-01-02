@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="30dp"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.list_tryout.ListTryoutActivity">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+
+                android:padding="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <SearchView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </SearchView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp">
+
+                </View>
+
+               <Button
+                   android:id="@+id/btn1"
+                   android:textColor="@color/putih"
+                   android:background="@drawable/rounded_blue_button"
+                   android:text="SOAL SAINTEK"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+               </Button>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp">
+
+                </View>
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:textColor="@color/putih"
+                    android:background="@drawable/rounded_blue_button"
+                    android:text="SOAL SOSHUM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </Button>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp">
+
+                </View>
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:textColor="@color/putih"
+                    android:background="@drawable/rounded_blue_button"
+                    android:text="SOAL CAMPURAN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </Button>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

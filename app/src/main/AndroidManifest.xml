@@ -15,10 +15,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:label="@string/materi_belajar"
-            android:name=".activities.materibelajar.MateriBelajarActivity">
-
-        </activity>
+            android:label="@string/tryout"
+            android:name=".activities.detail_tryout.DetailTryoutActivity"></activity>
+        <activity
+            android:name=".activities.list_tryout.ListTryoutActivity"
+            android:label="@string/tryout" />
+        <activity
+            android:name=".activities.materibelajar.MateriBelajarActivity"
+            android:label="@string/materi_belajar" />
         <activity
             android:name=".activities.splash.SplashActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -55,7 +59,7 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".activities.MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
     </application>
 
 </manifest>

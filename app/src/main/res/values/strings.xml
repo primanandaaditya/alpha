@@ -43,6 +43,7 @@
     <string name="bahasa_indonesia" translatable="false">Bahasa Indonesia</string>
     <string name="matematika_ipa" translatable="false">Matematika IPA</string>
     <string name="sejarah_wajib" translatable="false">Sejarah wajib</string>
+    <string name="post_baru" translatable="false">Post baru</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_belajar" translatable="false">Belajar</string>
@@ -85,5 +86,6 @@
         <item>XI IPS</item>
         <item>XII IPS</item>
     </string-array>
+    <string name="title_activity_koor">KoorActivity</string>
 
 </resources>

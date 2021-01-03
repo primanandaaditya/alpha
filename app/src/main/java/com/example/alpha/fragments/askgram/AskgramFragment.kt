@@ -11,15 +11,17 @@ import android.widget.LinearLayout
 import androidx.cardview.widget.CardView
 
 import com.example.alpha.R
+import com.example.alpha.activities.askgram.AddPostActivity
 import com.example.alpha.activities.askgram.DetailAskgramActivity
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
-/**
- * A simple [Fragment] subclass.
- */
+
 class AskgramFragment : Fragment() {
 
     private lateinit var cv: CardView
     private lateinit var ll: LinearLayout
+    private lateinit var llpost: LinearLayout
+    private lateinit var fab: FloatingActionButton
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -30,6 +32,16 @@ class AskgramFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
+        llpost= activity!!.findViewById(R.id.llpost)
+        fab = activity!!.findViewById(R.id.fab)
+
+        llpost.setOnClickListener(View.OnClickListener {
+            goToPost()
+        })
+
+        fab.setOnClickListener(View.OnClickListener {
+            goToPost()
+        })
 
         cv= activity!!.findViewById(R.id.cv)
         cv.setOnClickListener(View.OnClickListener {
@@ -43,6 +55,11 @@ class AskgramFragment : Fragment() {
             startActivity(intent)
         })
 
+    }
+
+    internal fun goToPost(){
+        var intent=Intent(activity, AddPostActivity::class.java)
+        startActivity(intent)
     }
 
 }

@@ -7,6 +7,9 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,8 +18,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:label="@string/tryout"
-            android:name=".activities.detail_tryout.DetailTryoutActivity"></activity>
+            android:label="@string/post_baru"
+            android:name=".activities.askgram.AddPostActivity">
+
+        </activity>
+        <activity
+            android:name=".fragments.askgram.KoorActivity"
+            android:label="@string/title_activity_koor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.detail_tryout.DetailTryoutActivity"
+            android:label="@string/tryout" />
         <activity
             android:name=".activities.list_tryout.ListTryoutActivity"
             android:label="@string/tryout" />

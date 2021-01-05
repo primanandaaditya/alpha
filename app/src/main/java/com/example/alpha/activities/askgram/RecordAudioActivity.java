@@ -56,9 +56,10 @@ public class RecordAudioActivity extends AppCompatActivity {
                 } catch (IOException ioe) {
                     // make something
                 }
+                play.setEnabled(false);
                 record.setEnabled(false);
                 stop.setEnabled(true);
-                Toast.makeText(getApplicationContext(), "Recording started", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), getResources().getString(R.string.mulai_rekam_suara), Toast.LENGTH_LONG).show();
             }
         });
 
@@ -69,22 +70,25 @@ public class RecordAudioActivity extends AppCompatActivity {
                 myAudioRecorder.stop();
                 myAudioRecorder.release();
 //                myAudioRecorder = null;
-                record.setEnabled(true);
+                record.setEnabled(false);
                 stop.setEnabled(false);
                 play.setEnabled(true);
-                Toast.makeText(getApplicationContext(), "Audio Recorder stopped", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), getResources().getString(R.string.rekam_suara_dihentikan), Toast.LENGTH_LONG).show();
             }
         });
 
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                record.setEnabled(false);
+                stop.setEnabled(false);
+
                 MediaPlayer mediaPlayer = new MediaPlayer();
                 try {
                     mediaPlayer.setDataSource(outputFile);
                     mediaPlayer.prepare();
                     mediaPlayer.start();
-                    Toast.makeText(getApplicationContext(), "Playing Audio", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), getResources().getString(R.string.putar_rekaman), Toast.LENGTH_LONG).show();
                 } catch (Exception e) {
                     // make something
                 }

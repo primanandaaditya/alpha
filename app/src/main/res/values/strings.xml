@@ -35,6 +35,12 @@
     <string name="buka" translatable="false">Buka</string>
     <string name="pencarian_tidak_ditemukan" translatable="false">Pencarian tidak ditemukan</string>
     <string name="rekam_audio" translatable="false">Rekam audio</string>
+    <string name="mulai_rekam_suara" translatable="false">Mulai rekam suara</string>
+    <string name="rekam_suara_dihentikan" translatable="false">Rekaman suara dihentikan</string>
+    <string name="putar_rekaman" translatable="false">Putar rekaman</string>
+    <string name="rekam" translatable="false">Rekam</string>
+    <string name="stop" translatable="false">Stop</string>
+    <string name="putar" translatable="false">Putar</string>
 
     <string name="fisika" translatable="false">Fisika</string>
     <string name="kimia" translatable="false">Kimia</string>

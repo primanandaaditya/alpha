@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.askgram.RecordAudioActivity">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.ssaurel.audiorecorder.MainActivity">
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/ic_mic"
+            android:id="@+id/logo"/>
+        <Button
+            android:textColor="@color/putih"
+            android:background="@drawable/rounded_blue_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Record"
+            android:textSize="20sp"
+            android:id="@+id/record"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            />
+        <Button
+            android:textColor="@color/putih"
+            android:background="@drawable/rounded_blue_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:textSize="20sp"
+            android:id="@+id/stop"
+            android:layout_below="@id/record"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            />
+        <Button
+            android:textColor="@color/putih"
+            android:background="@drawable/rounded_blue_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Play"
+            android:textSize="20sp"
+            android:id="@+id/play"
+            android:layout_below="@id/stop"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

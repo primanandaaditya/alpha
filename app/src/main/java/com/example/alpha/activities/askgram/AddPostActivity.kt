@@ -44,7 +44,15 @@ class AddPostActivity : AppCompatActivity() {
     private var imageUri: Uri? = null
 
 
-    private var PERMISSIONS = arrayOf<String>(Manifest.permission.READ_CONTACTS, Manifest.permission.WRITE_CONTACTS, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.CAMERA)
+    private var PERMISSIONS = arrayOf<String>(
+            Manifest.permission.READ_CONTACTS,
+            Manifest.permission.WRITE_CONTACTS,
+            Manifest.permission.WRITE_EXTERNAL_STORAGE,
+            Manifest.permission.READ_EXTERNAL_STORAGE,
+            Manifest.permission.ACCESS_FINE_LOCATION,
+            Manifest.permission.ACCESS_COARSE_LOCATION,
+            Manifest.permission.RECORD_AUDIO,
+            Manifest.permission.CAMERA)
 
     private fun dispatchTakePictureIntent() {
         val takePictureIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
@@ -84,6 +92,11 @@ class AddPostActivity : AppCompatActivity() {
         iv_kamera=findViewById(R.id.iv_kamera)
         iv_galeri=findViewById(R.id.iv_galeri)
         iv_mic = findViewById(R.id.iv_mic)
+
+        iv_mic.setOnClickListener(View.OnClickListener {
+            var intent=Intent(this, RecordAudioActivity::class.java)
+            startActivity(intent)
+        })
 
         iv_kamera.setOnClickListener(View.OnClickListener {
             dispatchTakePictureIntent()

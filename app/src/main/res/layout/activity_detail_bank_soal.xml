@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.bank_soal.detail.DetailBankSoalActivity">
+
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+
+                android:padding="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <SearchView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </SearchView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp">
+
+                </View>
+
+
+                <androidx.cardview.widget.CardView
+
+                    app:cardCornerRadius="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:padding="20dp"
+                        android:background="@color/colorPrimary"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@color/putih"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:text="Soal UTBK 2019"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp">
+
+                        </View>
+
+
+
+                        <Button
+
+                            android:background="@drawable/rounded_white_button"
+                            android:layout_gravity="end"
+                            android:text="@string/buka"
+                            android:id="@+id/btn_buka"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </Button>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp">
+
+                </View>
+
+                <androidx.cardview.widget.CardView
+
+                    app:cardCornerRadius="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:padding="20dp"
+                        android:background="@color/colorPrimary"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@color/putih"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:text="Soal UTBK 2018"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp">
+
+                        </View>
+
+
+
+                        <Button
+
+                            android:background="@drawable/rounded_white_button"
+                            android:layout_gravity="end"
+                            android:text="@string/buka"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </Button>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp">
+
+                </View>
+
+                <androidx.cardview.widget.CardView
+
+                    app:cardCornerRadius="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:padding="20dp"
+                        android:background="@color/colorPrimary"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@color/putih"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:text="Soal UTBK 2017"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp">
+
+                        </View>
+
+
+
+                        <Button
+
+                            android:background="@drawable/rounded_white_button"
+                            android:layout_gravity="end"
+                            android:text="@string/buka"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </Button>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp">
+
+                </View>
+
+                <androidx.cardview.widget.CardView
+
+                    app:cardCornerRadius="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:padding="20dp"
+                        android:background="@color/colorPrimary"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@color/putih"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:text="Soal UTBK 2016"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp">
+
+                        </View>
+
+
+
+                        <Button
+
+                            android:background="@drawable/rounded_white_button"
+                            android:layout_gravity="end"
+                            android:text="@string/buka"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </Button>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

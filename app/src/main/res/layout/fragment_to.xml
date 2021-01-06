@@ -130,7 +130,7 @@
                             android:layout_height="wrap_content">
 
                             <ImageView
-
+                                android:id="@+id/iv_bank_soal"
                                 app:srcCompat="@drawable/ic_bank_soal"
                                 android:layout_weight="1"
                                 android:layout_width="match_parent"

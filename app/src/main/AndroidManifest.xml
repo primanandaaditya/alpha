@@ -6,7 +6,7 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -20,13 +20,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:label="@string/rekam_audio"
-            android:name=".activities.askgram.RecordAudioActivity">
+            android:label="@string/bank_soal"
+            android:name=".activities.bank_soal.detail.DetailBankSoalActivity">
 
         </activity>
         <activity
+            android:label="@string/bank_soal"
+            android:name=".activities.bank_soal.list.ListBankSoalActivity" />
+        <activity
+            android:name=".activities.askgram.RecordAudioActivity"
+            android:label="@string/rekam_audio" />
+        <activity
             android:name=".activities.askgram.AddPostActivity"
-            android:label="@string/post_baru"></activity>
+            android:label="@string/post_baru" />
         <activity
             android:name=".fragments.askgram.KoorActivity"
             android:label="@string/title_activity_koor"

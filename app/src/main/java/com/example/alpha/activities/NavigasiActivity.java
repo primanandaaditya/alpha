@@ -1,10 +1,12 @@
 package com.example.alpha.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.example.alpha.R;
+import com.example.alpha.activities.leaderboard.home.LeaderboardHomeActivity;
 import com.example.alpha.activities.ui.home.HomeFragment;
 import com.example.alpha.fragments.belajar.BelajarFragment;
 import com.example.alpha.interfaces.IHome;
@@ -84,7 +86,8 @@ public class NavigasiActivity extends AppCompatActivity implements IHome {
 
     @Override
     public void callLeaderboard() {
-
+        Intent intent = new Intent(NavigasiActivity.this, LeaderboardHomeActivity.class);
+        startActivity(intent);
     }
 
     @Override

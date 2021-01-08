@@ -20,13 +20,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:label="@string/bank_soal"
-            android:name=".activities.bank_soal.detail.DetailBankSoalActivity">
+            android:label="@string/menu_leaderboard"
+            android:name=".activities.leaderboard.home.LeaderboardHomeActivity">
 
         </activity>
         <activity
-            android:label="@string/bank_soal"
-            android:name=".activities.bank_soal.list.ListBankSoalActivity" />
+            android:name=".activities.bank_soal.detail.DetailBankSoalActivity"
+            android:label="@string/bank_soal"></activity>
+        <activity
+            android:name=".activities.bank_soal.list.ListBankSoalActivity"
+            android:label="@string/bank_soal" />
         <activity
             android:name=".activities.askgram.RecordAudioActivity"
             android:label="@string/rekam_audio" />

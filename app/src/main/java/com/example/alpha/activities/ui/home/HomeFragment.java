@@ -112,6 +112,10 @@ public class HomeFragment extends Fragment {
                         navigasiActivity.callAskgram();
                         break;
 
+                    case 5:
+                        navigasiActivity.callLeaderboard();
+                        break;
+
                     case 7:
                         navigasiActivity.callAkun();
                         break;

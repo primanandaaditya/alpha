@@ -20,13 +20,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:label="@string/menu_leaderboard"
-            android:name=".activities.leaderboard.home.LeaderboardHomeActivity">
-
-        </activity>
+            android:name=".activities.leaderboard.detail.DetailLeaderboardActivity"
+            android:label="@string/title_activity_detail_leaderboard"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".activities.leaderboard.home.LeaderboardHomeActivity"
+            android:label="@string/menu_leaderboard"></activity>
         <activity
             android:name=".activities.bank_soal.detail.DetailBankSoalActivity"
-            android:label="@string/bank_soal"></activity>
+            android:label="@string/bank_soal" />
         <activity
             android:name=".activities.bank_soal.list.ListBankSoalActivity"
             android:label="@string/bank_soal" />

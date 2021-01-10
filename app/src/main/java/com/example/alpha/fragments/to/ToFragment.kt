@@ -7,27 +7,26 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.AdapterView
-import android.widget.GridView
-import android.widget.Toast
+import android.widget.Button
 
 import com.example.alpha.R
-import com.example.alpha.activities.ui.home.HomeAdapter
-import com.example.alpha.activities.ui.home.HomeModel
-import java.util.ArrayList
-import android.widget.AdapterView.OnItemClickListener
 import android.widget.ImageView
 import com.example.alpha.activities.bank_soal.list.ListBankSoalActivity
 import com.example.alpha.activities.list_tryout.ListTryoutActivity
-import com.example.alpha.activities.rencanabelajar.RencanaBelajarActivity
-import com.example.alpha.activities.to.ToActivity
+import com.example.alpha.activities.to.intro.IntroToActivity
 
 
 class ToFragment : Fragment() {
 
     private lateinit var iv_tryout: ImageView
     private lateinit var iv_bank_soal: ImageView
+    private lateinit var btn1: Button
+    private lateinit var btn2: Button
 
+    fun pindah(){
+        var intent = Intent(activity, IntroToActivity::class.java)
+        startActivity(intent)
+    }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -45,6 +44,17 @@ class ToFragment : Fragment() {
         iv_bank_soal.setOnClickListener(View.OnClickListener {
             var intent = Intent(activity, ListBankSoalActivity::class.java)
             startActivity(intent)
+        })
+
+        btn1 = root.findViewById(R.id.btn1)
+        btn2 = root.findViewById(R.id.btn2)
+
+        btn1.setOnClickListener(View.OnClickListener {
+            pindah()
+        })
+
+        btn2.setOnClickListener(View.OnClickListener {
+            pindah()
         })
         return root
 

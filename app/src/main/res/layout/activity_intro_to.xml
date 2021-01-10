@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/colorPrimary"
+    android:padding="20dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.to.intro.IntroToActivity">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="@color/putih"
+                android:text="Try Out SBMPTN Saintek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/putih"
+                android:text="Kode Soal A0001"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/putih"/>
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/tryout"
+                android:layout_width="160dp"
+                android:layout_height="160dp">
+
+            </ImageView>
+
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+
+            <TextView
+                android:textSize="16dp"
+                android:textColor="@color/putih"
+                android:text="Komponen tes:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:textColor="@color/putih"
+                android:text="1. Matematika (20 soal) 25 menit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:textColor="@color/putih"
+                android:text="2. Fisika (20 soal) 25 menit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:textColor="@color/putih"
+                android:text="3. Biologi (20 soal) 25 menit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:textColor="@color/putih"
+                android:text="4. Kimia (20 soal) 25 menit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+
+            <TextView
+                android:textSize="16dp"
+                android:textColor="@color/putih"
+                android:text="Keterangan :"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:textColor="@color/putih"
+                android:text="1. Kerjakan dengan jujur!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:textColor="@color/putih"
+                android:text="2. Anda dapat beristirahat 15 menit setelah menyelesaikan 1 komponen tes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></View>
+
+           <Button
+               android:background="@drawable/rounded_white_button"
+               android:id="@+id/btn_mulai"
+               android:text="@string/mulai"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+           </Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

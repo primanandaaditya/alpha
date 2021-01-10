@@ -231,6 +231,7 @@
                     </TextView>
 
                     <Button
+                        android:id="@+id/btn1"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="10dp"
                         android:textColor="@color/putih"
@@ -288,6 +289,7 @@
                     </TextView>
 
                     <Button
+                        android:id="@+id/btn2"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="10dp"
                         android:textColor="@color/putih"

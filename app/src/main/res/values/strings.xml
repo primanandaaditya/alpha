@@ -43,6 +43,7 @@
     <string name="stop" translatable="false">Stop</string>
     <string name="putar" translatable="false">Putar</string>
     <string name="semua" translatable="false">Semua</string>
+    <string name="mulai" translatable="false">Mulai</string>
 
 
     <string name="fisika" translatable="false">Fisika</string>

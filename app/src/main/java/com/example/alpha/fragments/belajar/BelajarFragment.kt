@@ -14,7 +14,7 @@ import android.widget.ImageView
 import com.example.alpha.R
 import com.example.alpha.activities.materibelajar.MateriBelajarActivity
 import com.example.alpha.activities.rencanabelajar.RencanaBelajarActivity
-import com.example.alpha.activities.to.ToActivity
+import com.example.alpha.activities.to.home.ToActivity
 import com.example.alpha.activities.ui.home.HomeModel
 import com.example.alpha.fragments.to.MapelAdapter
 import java.util.ArrayList

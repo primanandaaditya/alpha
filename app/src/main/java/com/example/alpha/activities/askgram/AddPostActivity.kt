@@ -87,6 +87,8 @@ class AddPostActivity : AppCompatActivity() {
         return true
     }
 
+
+
     fun findid(){
         iv=findViewById(R.id.iv)
         iv_kamera=findViewById(R.id.iv_kamera)

@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.to.ToActivity">
+    tools:context=".activities.to.home.ToActivity">
 
 
     <ScrollView
@@ -234,6 +234,7 @@
                     </TextView>
 
                     <Button
+                        android:id="@+id/btn1"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="10dp"
                         android:textColor="@color/putih"
@@ -291,6 +292,7 @@
                     </TextView>
 
                     <Button
+                        android:id="@+id/btn2"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="10dp"
                         android:textColor="@color/putih"

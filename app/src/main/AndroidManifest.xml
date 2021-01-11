@@ -8,7 +8,6 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
-
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
@@ -22,9 +21,12 @@
         android:theme="@style/AppTheme">
         <activity
             android:label="@string/tryout"
-            android:name=".activities.to.intro.IntroToActivity">
+            android:name=".activities.to.screen.TryoutScreenActivity">
 
         </activity>
+        <activity
+            android:name=".activities.to.intro.IntroToActivity"
+            android:label="@string/tryout"></activity>
         <activity
             android:name=".activities.leaderboard.detail.DetailLeaderboardActivity"
             android:label="@string/title_activity_detail_leaderboard"

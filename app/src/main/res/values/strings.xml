@@ -33,6 +33,7 @@
     <string name="action_settings">Settings</string>
     <string name="bank_soal" translatable="false">Bank soal</string>
     <string name="tryout" translatable="false">Try Out</string>
+    <string name="akhiri_try_out" translatable="false">Akhiri Tryout</string>
     <string name="buka" translatable="false">Buka</string>
     <string name="pencarian_tidak_ditemukan" translatable="false">Pencarian tidak ditemukan</string>
     <string name="rekam_audio" translatable="false">Rekam audio</string>

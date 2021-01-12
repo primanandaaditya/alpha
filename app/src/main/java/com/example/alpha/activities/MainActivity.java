@@ -1,10 +1,13 @@
 package com.example.alpha.activities;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.room.Room;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -20,11 +23,13 @@ public class MainActivity extends BaseActivity {
     TextView tv_login,tv_email,et_email,tv_password,et_password,tv_lupapassword,tv_belumpunya,tv_registrasi;
     Button btn_login;
 
+//    RecyclerView rv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         findId();
 

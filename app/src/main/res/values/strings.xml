@@ -32,6 +32,8 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="bank_soal" translatable="false">Bank soal</string>
+    <string name="pertanyaan" translatable="false">Pertanyaan</string>
+    <string name="jawaban" translatable="false">Jawaban</string>
     <string name="tryout" translatable="false">Try Out</string>
     <string name="akhiri_try_out" translatable="false">Akhiri Tryout</string>
     <string name="buka" translatable="false">Buka</string>

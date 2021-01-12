@@ -1,6 +1,7 @@
 package com.example.alpha.activities.to.screen;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,11 +12,15 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.alpha.R;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class RVTryoutAdapter extends RecyclerView.Adapter<RVTryoutAdapter.RVTryoutViewHolder> {
 
     private List<TryoutModel> tryoutModels;
     private Context context;
+    private ITryout iTryout;
+    int id;
+    String soal;
 
     public static class RVTryoutViewHolder extends RecyclerView.ViewHolder {
         TextView tv_nomor;
@@ -26,9 +31,10 @@ public class RVTryoutAdapter extends RecyclerView.Adapter<RVTryoutAdapter.RVTryo
     }
 
 
-    public RVTryoutAdapter(List<TryoutModel> tryoutModels, Context context) {
+    public RVTryoutAdapter(List<TryoutModel> tryoutModels, Context context, ITryout iTryout) {
         this.tryoutModels=tryoutModels;
         this.context = context;
+        this.iTryout = iTryout;
     }
 
 
@@ -47,6 +53,8 @@ public class RVTryoutAdapter extends RecyclerView.Adapter<RVTryoutAdapter.RVTryo
         holder.setIsRecyclable(false);
         holder.tv_nomor.setText(String.valueOf(tryoutModels.get(position).getNomor()));
 
+
+
         holder.tv_nomor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,6 +63,12 @@ public class RVTryoutAdapter extends RecyclerView.Adapter<RVTryoutAdapter.RVTryo
                 }
 
                 tryoutModels.get(position).setAktiv(true);
+
+                id = tryoutModels.get(position).getId();
+
+                soal = getSoal(id);
+                iTryout.getSoal(soal);
+
                 notifyDataSetChanged();
             }
         });
@@ -67,14 +81,21 @@ public class RVTryoutAdapter extends RecyclerView.Adapter<RVTryoutAdapter.RVTryo
 
 
     @Override
-
     public int getItemCount() {
         return tryoutModels.size();
     }
 
+    private String getSoal(Integer id){
+        String hasil = "";
+        for (TryoutModel tryoutModel: tryoutModels){
+            if (tryoutModel.getId()==id){
+                Log.d("nilai id", String.valueOf(id));
+                hasil = tryoutModel.getSoal();
+            }
+        }
 
-
-
+        return hasil;
+    }
 
 }
 

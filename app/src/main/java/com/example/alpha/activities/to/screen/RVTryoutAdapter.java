@@ -22,6 +22,9 @@ public class RVTryoutAdapter extends RecyclerView.Adapter<RVTryoutAdapter.RVTryo
     int id;
     String soal;
 
+    //variabel untuk menampung opsi A,B,C,D dst
+    String [] opsi;
+
     public static class RVTryoutViewHolder extends RecyclerView.ViewHolder {
         TextView tv_nomor;
         public RVTryoutViewHolder(View v) {
@@ -58,16 +61,33 @@ public class RVTryoutAdapter extends RecyclerView.Adapter<RVTryoutAdapter.RVTryo
         holder.tv_nomor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                //looping semua model, lalu set aktiv= false semuanya
                 for (TryoutModel tryoutModel: tryoutModels){
                     tryoutModel.setAktiv(false);
                 }
 
+                //nyalakan nomor dengan orange, untuk indeks yang diklik
                 tryoutModels.get(position).setAktiv(true);
 
+                //tampung variabel id dalam 'id'
                 id = tryoutModels.get(position).getId();
 
+                //tampung soal
                 soal = getSoal(id);
+
+                //tampung opsi jawaban
+                opsi=new String[4];
+                opsi[0] = getOpsi(id,"a");
+                opsi[1] = getOpsi(id,"b");
+                opsi[2] = getOpsi(id,"c");
+                opsi[3] = getOpsi(id, "d");
+
                 iTryout.getSoal(soal);
+                iTryout.getOpsiA("A. " + opsi[0]);
+                iTryout.getOpsiB("B. " + opsi[1]);
+                iTryout.getOpsiC("C. " + opsi[2]);
+                iTryout.getOpsiD("D. " + opsi[3]);
 
                 notifyDataSetChanged();
             }
@@ -89,11 +109,36 @@ public class RVTryoutAdapter extends RecyclerView.Adapter<RVTryoutAdapter.RVTryo
         String hasil = "";
         for (TryoutModel tryoutModel: tryoutModels){
             if (tryoutModel.getId()==id){
-                Log.d("nilai id", String.valueOf(id));
                 hasil = tryoutModel.getSoal();
             }
         }
+        return hasil;
+    }
 
+    private String getOpsi(Integer id, String ke){
+        String hasil = "";
+        for (TryoutModel tryoutModel: tryoutModels){
+            if (tryoutModel.getId()==id){
+                switch (ke.toLowerCase()){
+                    case "a":
+                        hasil = tryoutModel.getPilihanA();
+                        break;
+                    case "b":
+                        hasil = tryoutModel.getPilihanB();
+                        break;
+                    case "c":
+                        hasil = tryoutModel.getPilihanC();
+                        break;
+                    case "d":
+                        hasil = tryoutModel.getPilihanD();
+                        break;
+                        default:
+                            hasil = tryoutModel.getPilihanA();
+
+                }
+
+            }
+        }
         return hasil;
     }
 

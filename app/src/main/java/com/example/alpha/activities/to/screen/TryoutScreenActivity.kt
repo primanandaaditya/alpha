@@ -18,9 +18,11 @@ import androidx.core.content.ContextCompat.getSystemService
 import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import androidx.core.content.ContextCompat.getSystemService
 import android.content.DialogInterface
+import android.content.Intent
 import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import androidx.core.content.ContextCompat.getSystemService
 import androidx.appcompat.app.AlertDialog
+import com.example.alpha.activities.to.finish.FinishToActivity
 
 
 class TryoutScreenActivity : AppCompatActivity(), ITryout {
@@ -40,6 +42,13 @@ class TryoutScreenActivity : AppCompatActivity(), ITryout {
     private lateinit var tv_opsiC: TextView
     private lateinit var tv_opsiD: TextView
     private lateinit var tv_waktu: TextView
+
+    override fun onDestroy() {
+        super.onDestroy()
+
+        var intent = Intent(this, FinishToActivity::class.java)
+        startActivity(intent)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -22,6 +22,7 @@ class IntroToActivity : AppCompatActivity() {
         btn_mulai.setOnClickListener(View.OnClickListener {
             var intent= Intent(this, TryoutScreenActivity::class.java)
             startActivity(intent)
+            finish()
         })
 
     }

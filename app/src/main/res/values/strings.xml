@@ -47,7 +47,10 @@
     <string name="putar" translatable="false">Putar</string>
     <string name="semua" translatable="false">Semua</string>
     <string name="mulai" translatable="false">Mulai</string>
-
+    <string name="selesai" translatable="false">Selesai</string>
+    <string name="tryout_selesai" translatable="false">Tryout selesai</string>
+    <string name="analisa_tryout" translatable="false">Analisa tryout</string>
+    <string name="lihat_pembahasan" translatable="false">Lihat pembahasan</string>
 
     <string name="fisika" translatable="false">Fisika</string>
     <string name="kimia" translatable="false">Kimia</string>

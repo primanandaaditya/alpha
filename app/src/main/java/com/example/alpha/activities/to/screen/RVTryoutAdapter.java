@@ -88,6 +88,7 @@ public class RVTryoutAdapter extends RecyclerView.Adapter<RVTryoutAdapter.RVTryo
                 iTryout.getOpsiB("B. " + opsi[1]);
                 iTryout.getOpsiC("C. " + opsi[2]);
                 iTryout.getOpsiD("D. " + opsi[3]);
+                iTryout.getPembahasan(tryoutModels.get(position).getPembahasan());
 
                 notifyDataSetChanged();
             }

@@ -1,5 +1,4 @@
 package com.example.alpha.activities
-
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.KeyEvent
@@ -9,9 +8,6 @@ import androidx.core.app.ComponentActivity
 import androidx.core.app.ComponentActivity.ExtraData
 import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import androidx.core.content.ContextCompat.getSystemService
-
-
-
 
 class EditAkunActivity : AppCompatActivity() {
 

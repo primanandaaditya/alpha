@@ -6,4 +6,5 @@ public interface ITryout {
     void getOpsiB(String opsi);
     void getOpsiC(String opsi);
     void getOpsiD(String opsi);
+    void getPembahasan(String pembahasan);
 }

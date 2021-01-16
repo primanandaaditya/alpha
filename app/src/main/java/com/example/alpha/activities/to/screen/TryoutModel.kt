@@ -13,8 +13,9 @@ class TryoutModel {
     var pilihanB: String
     var pilihanC: String
     var pilihanD: String
+    var pembahasan: String
 
-    constructor(id: Int, nomor: Int, soal: String, jawaban: String, kunci: String, komponen: String, indeks_komponen: Int, aktiv: Boolean, pilihanA: String, pilihanB: String, pilihanC: String, pilihanD: String) {
+    constructor(id: Int, nomor: Int, soal: String, jawaban: String, kunci: String, komponen: String, indeks_komponen: Int, aktiv: Boolean, pilihanA: String, pilihanB: String, pilihanC: String, pilihanD: String, pembahasan: String) {
         this.id = id
         this.nomor = nomor
         this.soal = soal
@@ -27,5 +28,6 @@ class TryoutModel {
         this.pilihanB = pilihanB
         this.pilihanC = pilihanC
         this.pilihanD = pilihanD
+        this.pembahasan = pembahasan
     }
 }

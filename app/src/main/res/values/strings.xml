@@ -51,6 +51,7 @@
     <string name="tryout_selesai" translatable="false">Tryout selesai</string>
     <string name="analisa_tryout" translatable="false">Analisa tryout</string>
     <string name="lihat_pembahasan" translatable="false">Lihat pembahasan</string>
+    <string name="pembahasan" translatable="false">Pembahasan</string>
 
     <string name="fisika" translatable="false">Fisika</string>
     <string name="kimia" translatable="false">Kimia</string>

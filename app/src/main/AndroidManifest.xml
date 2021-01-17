@@ -6,7 +6,7 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <uses-feature
@@ -21,14 +21,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:label="@string/pembahasan"
-            android:name=".activities.to.pembahasan.PembahasanToActivity"
-            >
+            android:label="@string/analisa"
+            android:name=".activities.to.analisa.AnalisaToActivity">
 
         </activity>
         <activity
+            android:name=".activities.to.pembahasan.PembahasanToActivity"
+            android:label="@string/pembahasan"></activity>
+        <activity
             android:name=".activities.to.finish.FinishToActivity"
-            android:label="@string/selesai"></activity>
+            android:label="@string/selesai" />
         <activity
             android:name=".activities.to.screen.TryoutScreenActivity"
             android:label="@string/tryout" />

@@ -1,4 +1,4 @@
-package com.example.alpha.activities.to.finish
+package com.example.alpha.activities.to.analisa
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,38 +7,32 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.Button
 import com.example.alpha.R
-import com.example.alpha.activities.to.analisa.AnalisaToActivity
 import com.example.alpha.activities.to.pembahasan.PembahasanToActivity
 
-class FinishToActivity : AppCompatActivity() {
+class AnalisaToActivity : AppCompatActivity() {
 
-    private lateinit var btn_analisa: Button
+    private lateinit var btn_analisis_grafik: Button
+    private lateinit var btn_rincian_hasil: Button
     private lateinit var btn_pembahasan: Button
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_finish_to)
+        setContentView(R.layout.activity_analisa_to)
         getSupportActionBar()!!.setDisplayHomeAsUpEnabled(true);
 
         findId()
-
     }
 
     fun findId(){
-
-        btn_analisa=findViewById(R.id.btn_analisa)
+        btn_analisis_grafik=findViewById(R.id.btn_analisis_grafik)
         btn_pembahasan=findViewById(R.id.btn_pembahasan)
-
-        btn_analisa.setOnClickListener(View.OnClickListener {
-            var intent=Intent(this, AnalisaToActivity::class.java)
-            startActivity(intent)
-        })
+        btn_rincian_hasil=findViewById(R.id.btn_rincian_hasil)
 
         btn_pembahasan.setOnClickListener(View.OnClickListener {
-            var intent= Intent(this, PembahasanToActivity::class.java)
+            var intent=Intent(this, PembahasanToActivity::class.java)
             startActivity(intent)
         })
+
 
     }
 
@@ -59,4 +53,5 @@ class FinishToActivity : AppCompatActivity() {
 
 
     }
+
 }

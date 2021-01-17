@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".activities.to.analisa.AnalisaToActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+
+                app:cardCornerRadius="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:textSize="16dp"
+                            android:text="Rincian Tryout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <TableLayout
+                            android:padding="10dp"
+                            xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+                            <TableRow>
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:text="Nama">
+                                </TextView>
+
+                                <TextView
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:text=":">
+                                </TextView>
+
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:text="Jesslyn Owen">
+                                </TextView>
+                            </TableRow>
+
+                            <TableRow>
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:text="Tanggal">
+                                </TextView>
+
+                                <TextView
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:text=":">
+                                </TextView>
+
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:text="10 November 2020">
+                                </TextView>
+                            </TableRow>
+
+
+                            <TableRow>
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:text="Tipe">
+                                </TextView>
+
+                                <TextView
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:text=":">
+                                </TextView>
+
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:text="Saintek">
+                                </TextView>
+                            </TableRow>
+
+                            <TableRow>
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:text="Jam pengerjaan">
+                                </TextView>
+
+                                <TextView
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:text=":">
+                                </TextView>
+
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:text="13:40:40">
+                                </TextView>
+                            </TableRow>
+
+
+                            <TableRow>
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:text="Lama pengerjaan">
+                                </TextView>
+
+                                <TextView
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:text=":">
+                                </TextView>
+
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:text="01:33:09">
+                                </TextView>
+
+
+                            </TableRow>
+
+
+                            <TableRow>
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:text="Jumlah benar">
+                                </TextView>
+
+                                <TextView
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:text=":">
+                                </TextView>
+
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:text="10/20">
+                                </TextView>
+                            </TableRow>
+                        </TableLayout>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:padding="20dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textAlignment="center"
+                            android:textColor="@color/putih"
+                            android:textSize="30dp"
+                            android:textStyle="bold"
+                            android:text="600"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <TextView
+                            android:textAlignment="center"
+                            android:textColor="@color/putih"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:text="Nilai Akhir"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></View>
+
+            <androidx.cardview.widget.CardView
+
+                app:cardCornerRadius="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:textSize="16dp"
+                            android:text="Peringkat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_marginRight="5dp"
+                                app:cardCornerRadius="20dp"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:padding="10dp"
+                                    android:background="@color/colorPrimary"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_gravity="center_vertical|center_horizontal"
+                                        android:drawableLeft="@drawable/ic_bintang_12"
+                                        android:drawableRight="@drawable/ic_bintang_12"
+                                        android:textStyle="bold"
+                                        android:textSize="20dp"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/kuning"
+                                        android:text=" TOP "
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:textStyle="bold"
+                                        android:textSize="30dp"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/putih"
+                                        android:text="12%"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                    </TextView>
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_marginLeft="5dp"
+                                app:cardCornerRadius="20dp"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:padding="10dp"
+                                    android:background="@color/colorPrimary"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:layout_gravity="center_horizontal"
+                                        app:srcCompat="@drawable/ic_chart"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp">
+
+                                    </ImageView>
+
+                                    <TextView
+                                        android:textStyle="bold"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/putih"
+                                        android:text="Leaderboard"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                    </TextView>
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:padding="20dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:textAlignment="center"
+                            android:textColor="@color/putih"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:text="200/3100 peserta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></View>
+
+            <Button
+                android:textColor="@color/putih"
+                android:text="@string/rincian_hasil"
+                android:id="@+id/btn_rincian_hasil"
+                android:background="@drawable/rounded_blue_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </Button>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></View>
+
+            <Button
+                android:textColor="@color/putih"
+                android:text="@string/analisa_grafik"
+                android:id="@+id/btn_analisis_grafik"
+                android:background="@drawable/rounded_blue_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </Button>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></View>
+
+            <Button
+                android:textColor="@color/putih"
+                android:text="@string/pembahasan"
+                android:id="@+id/btn_pembahasan"
+                android:background="@drawable/rounded_blue_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </Button>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

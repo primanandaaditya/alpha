@@ -7,7 +7,7 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.Button
 import com.example.alpha.R
-import com.example.alpha.activities.to.analisa.AnalisaToActivity
+import com.example.alpha.activities.to.analisa.home.AnalisaToActivity
 import com.example.alpha.activities.to.pembahasan.PembahasanToActivity
 
 class FinishToActivity : AppCompatActivity() {

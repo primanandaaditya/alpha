@@ -55,6 +55,7 @@
     <string name="analisa" translatable="false">Analisa</string>
     <string name="rincian_hasil" translatable="false">Rincian Hasil</string>
     <string name="analisa_grafik" translatable="false">Analisa Grafik</string>
+    <string name="detail_analisa" translatable="false">Detail Analisa</string>
 
 
     <string name="fisika" translatable="false">Fisika</string>

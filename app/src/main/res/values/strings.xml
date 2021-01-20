@@ -56,6 +56,10 @@
     <string name="rincian_hasil" translatable="false">Rincian Hasil</string>
     <string name="analisa_grafik" translatable="false">Analisa Grafik</string>
     <string name="detail_analisa" translatable="false">Detail Analisa</string>
+    <string name="grafik_progress_nilai" translatable="false">Grafik Progress Nilai</string>
+    <string name="grafik_tes_potensi_skolastik" translatable="false">Grafik Tes Potensi Skolastik</string>
+    <string name="grafik_tes_kemampuan_akademik_saintek" translatable="false">Grafik Tes Kemampuan Akademik Saintek</string>
+    <string name="grafik_tes_kemampuan_akademik_soshum" translatable="false">Grafik Tes Kemampuan Akademik Soshum</string>
 
 
     <string name="fisika" translatable="false">Fisika</string>

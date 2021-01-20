@@ -21,13 +21,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:label="@string/detail_analisa"
-            android:name=".activities.to.analisa.detail.DetailAnalisaToActivity">
+            android:label="@string/analisa_grafik"
+            android:name=".activities.to.grafik.GrafikToActivity">
 
         </activity>
         <activity
+            android:name=".activities.to.analisa.detail.DetailAnalisaToActivity"
+            android:label="@string/detail_analisa"></activity>
+        <activity
             android:name=".activities.to.analisa.home.AnalisaToActivity"
-            android:label="@string/analisa"></activity>
+            android:label="@string/analisa" />
         <activity
             android:name=".activities.to.pembahasan.PembahasanToActivity"
             android:label="@string/pembahasan" />

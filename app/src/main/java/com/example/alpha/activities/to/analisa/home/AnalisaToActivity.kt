@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.Button
 import com.example.alpha.R
 import com.example.alpha.activities.to.analisa.detail.DetailAnalisaToActivity
+import com.example.alpha.activities.to.grafik.GrafikToActivity
 import com.example.alpha.activities.to.pembahasan.PembahasanToActivity
 
 class AnalisaToActivity : AppCompatActivity() {
@@ -28,6 +29,11 @@ class AnalisaToActivity : AppCompatActivity() {
         btn_analisis_grafik=findViewById(R.id.btn_analisis_grafik)
         btn_pembahasan=findViewById(R.id.btn_pembahasan)
         btn_rincian_hasil=findViewById(R.id.btn_rincian_hasil)
+
+        btn_analisis_grafik.setOnClickListener(View.OnClickListener {
+            var intent=Intent(this, GrafikToActivity::class.java)
+            startActivity(intent)
+        })
 
         btn_pembahasan.setOnClickListener(View.OnClickListener {
             var intent=Intent(this, PembahasanToActivity::class.java)

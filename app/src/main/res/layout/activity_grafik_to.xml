@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.to.grafik.GrafikToActivity">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="@string/grafik_progress_nilai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/chart1"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp">
+
+                    </com.github.mikephil.charting.charts.LineChart>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></View>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="@string/grafik_tes_potensi_skolastik"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/chart2"
+                        android:layout_width="match_parent"
+                        android:layout_height="600dp">
+
+                    </com.github.mikephil.charting.charts.LineChart>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></View>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="@string/grafik_tes_kemampuan_akademik_saintek"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/chart3"
+                        android:layout_width="match_parent"
+                        android:layout_height="600dp">
+
+                    </com.github.mikephil.charting.charts.LineChart>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -8,6 +8,8 @@ import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.components.AxisBase;
+import com.github.mikephil.charting.components.Description;
+import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.BarData;
@@ -20,6 +22,7 @@ import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
 import com.github.mikephil.charting.data.PieEntry;
 import com.github.mikephil.charting.formatter.IAxisValueFormatter;
+import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
 import com.github.mikephil.charting.utils.ColorTemplate;
 import com.example.alpha.R;
 import java.util.ArrayList;
@@ -34,6 +37,8 @@ public class ChartHelper {
         int awal,akhir;
         awal= 1 ;
         akhir=SumbuX.size();
+        Description description = pieChart.getDescription();
+        description.setEnabled(false);
 
         for(int num =awal; num <= akhir; num++){
             entries1.add(new PieEntry( SumbuY.get(num-1), SumbuX.get(num) ));
@@ -58,6 +63,8 @@ public class ChartHelper {
         int awal,akhir;
         awal= 1 ;
         akhir=SumbuX.size();
+        Description description = barChart.getDescription();
+        description.setEnabled(false);
 
         if (akhir==1){
             awal=0;
@@ -120,6 +127,8 @@ public class ChartHelper {
         List<Entry> entries1 = new ArrayList<Entry>();
         int awal,akhir;
         akhir=SumbuX.size();
+        Description description = lineChart.getDescription();
+        description.setEnabled(false);
 
         if (akhir==1){
             //kalau datanya hanya 1
@@ -137,7 +146,7 @@ public class ChartHelper {
             xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
             xAxis.setDrawGridLines(false);
             xAxis.setLabelCount(1);
-            xAxis.setLabelRotationAngle(90);
+            xAxis.setLabelRotationAngle(0);
             xAxis.setValueFormatter(new IAxisValueFormatter() {
 
                 @Override
@@ -165,7 +174,7 @@ public class ChartHelper {
             xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
             xAxis.setDrawGridLines(false);
 
-            xAxis.setLabelRotationAngle(90);
+            xAxis.setLabelRotationAngle(0);
             xAxis.setValueFormatter(new IAxisValueFormatter() {
 
                 @Override
@@ -179,5 +188,39 @@ public class ChartHelper {
         }
 
     }
+
+
+    public static void MultiLineChartFormat(LineChart lineChart, ArrayList<LineDataSet> lineDataSets, final HashMap<Integer, String> SumbuX, String label){
+
+        lineChart.setScaleMinima(2,0);
+        Description description = lineChart.getDescription();
+        description.setEnabled(false);
+
+        XAxis xAxis = lineChart.getXAxis();
+        xAxis.setGranularity(1);
+        xAxis.setDrawLabels(true);
+        xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
+        xAxis.setDrawGridLines(false);
+
+        xAxis.setLabelRotationAngle(0);
+        xAxis.setValueFormatter(new IAxisValueFormatter() {
+
+            @Override
+            public String getFormattedValue(float value, AxisBase axis) {
+                return SumbuX.get((int)value);
+            }
+        });
+
+        List<ILineDataSet> dataSets = new ArrayList<ILineDataSet>();
+        for(LineDataSet lineDataSet: lineDataSets){
+            dataSets.add(lineDataSet);
+        }
+
+        LineData lineData = new LineData(dataSets);
+        lineChart.setData(lineData);
+        lineChart.invalidate();
+
+    }
+
 
 }

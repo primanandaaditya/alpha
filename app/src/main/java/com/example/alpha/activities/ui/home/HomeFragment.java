@@ -27,10 +27,6 @@ public class HomeFragment extends Fragment {
     GridView gridView;
     IHome iHome;
 
-//    public HomeFragment(IHome iHome) {
-//        this.iHome = iHome;
-//    }
-
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
@@ -114,6 +110,10 @@ public class HomeFragment extends Fragment {
 
                     case 5:
                         navigasiActivity.callLeaderboard();
+                        break;
+
+                    case 6:
+                        navigasiActivity.callWeeklyChalenge();
                         break;
 
                     case 7:

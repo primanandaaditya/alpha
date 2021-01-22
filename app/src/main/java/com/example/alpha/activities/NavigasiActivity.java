@@ -7,6 +7,7 @@ import android.widget.Toast;
 
 import com.example.alpha.R;
 import com.example.alpha.activities.leaderboard.home.LeaderboardHomeActivity;
+import com.example.alpha.activities.to.grafik.GrafikToActivity;
 import com.example.alpha.activities.ui.home.HomeFragment;
 import com.example.alpha.fragments.belajar.BelajarFragment;
 import com.example.alpha.interfaces.IHome;
@@ -81,7 +82,8 @@ public class NavigasiActivity extends AppCompatActivity implements IHome {
 
     @Override
     public void callWeeklyChalenge() {
-
+        Intent intent=new Intent(NavigasiActivity.this, GrafikToActivity.class);
+        startActivity(intent);
     }
 
     @Override

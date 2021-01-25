@@ -14,4 +14,13 @@ public class Util {
 
     }
 
+    public Integer Acak100(){
+        Random r = new Random();
+        int low = 50;
+        int high = 100;
+        int result = r.nextInt(high-low) + low;
+        return result;
+
+    }
+
 }

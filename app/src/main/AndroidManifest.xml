@@ -21,13 +21,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:label="@string/analisa_grafik"
-            android:name=".activities.to.grafik.GrafikToActivity">
+            android:label="@string/leaderboard_askgram"
+            android:name=".activities.leaderboard.askgram.LeaderboardAskgramActivity">
 
         </activity>
         <activity
+            android:name=".activities.to.grafik.GrafikToActivity"
+            android:label="@string/analisa_grafik"></activity>
+        <activity
             android:name=".activities.to.analisa.detail.DetailAnalisaToActivity"
-            android:label="@string/detail_analisa"></activity>
+            android:label="@string/detail_analisa" />
         <activity
             android:name=".activities.to.analisa.home.AnalisaToActivity"
             android:label="@string/analisa" />
@@ -45,11 +48,10 @@
             android:label="@string/tryout" />
         <activity
             android:name=".activities.leaderboard.detail.DetailLeaderboardActivity"
-            android:label="@string/title_activity_detail_leaderboard"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:label="@string/title_activity_detail_leaderboard" />
         <activity
             android:name=".activities.leaderboard.home.LeaderboardHomeActivity"
-            android:label="@string/menu_leaderboard" />
+            android:label="@string/leaderboard_first_try" />
         <activity
             android:name=".activities.bank_soal.detail.DetailBankSoalActivity"
             android:label="@string/bank_soal" />

@@ -60,7 +60,9 @@
     <string name="grafik_tes_potensi_skolastik" translatable="false">Grafik Tes Potensi Skolastik</string>
     <string name="grafik_tes_kemampuan_akademik_saintek" translatable="false">Grafik Tes Kemampuan Akademik Saintek</string>
     <string name="grafik_tes_kemampuan_akademik_soshum" translatable="false">Grafik Tes Kemampuan Akademik Soshum</string>
-
+    <string name="leaderboard_first_try" translatable="false">Leaderboard First Try</string>
+    <string name="leaderboard_askgram" translatable="false">Leaderboard askgram</string>
+    <string name="leaderboard_global" translatable="false">Leaderboard global</string>
 
     <string name="fisika" translatable="false">Fisika</string>
     <string name="kimia" translatable="false">Kimia</string>

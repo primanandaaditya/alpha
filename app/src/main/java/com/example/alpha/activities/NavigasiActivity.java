@@ -82,8 +82,8 @@ public class NavigasiActivity extends AppCompatActivity implements IHome {
 
     @Override
     public void callWeeklyChalenge() {
-        Intent intent=new Intent(NavigasiActivity.this, GrafikToActivity.class);
-        startActivity(intent);
+//        Intent intent=new Intent(NavigasiActivity.this, GrafikToActivity.class);
+//        startActivity(intent);
     }
 
     @Override

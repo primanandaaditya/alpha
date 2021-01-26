@@ -16,6 +16,7 @@ import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import android.widget.Toast
 import androidx.core.content.ContextCompat.getSystemService
 import com.example.alpha.activities.leaderboard.askgram.LeaderboardAskgramActivity
+import com.example.alpha.activities.leaderboard.global.LeaderboardGlobalActivity
 
 
 class LeaderboardHomeActivity : AppCompatActivity() {
@@ -64,7 +65,8 @@ class LeaderboardHomeActivity : AppCompatActivity() {
             }
 
             R.id.menu_leaderboard_global -> {
-                Toast.makeText(this,"Global",Toast.LENGTH_SHORT).show()
+                var intent=Intent(this, LeaderboardGlobalActivity::class.java)
+                startActivity(intent)
                 return true
             }
 

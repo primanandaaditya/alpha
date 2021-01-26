@@ -21,13 +21,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:label="@string/leaderboard_askgram"
-            android:name=".activities.leaderboard.askgram.LeaderboardAskgramActivity">
-
-        </activity>
+            android:name=".activities.leaderboard.global.LeaderboardGlobalActivity"
+            android:label="@string/leaderboard_global"></activity>
+        <activity
+            android:name=".activities.leaderboard.askgram.LeaderboardAskgramActivity"
+            android:label="@string/leaderboard_askgram" />
         <activity
             android:name=".activities.to.grafik.GrafikToActivity"
-            android:label="@string/analisa_grafik"></activity>
+            android:label="@string/analisa_grafik" />
         <activity
             android:name=".activities.to.analisa.detail.DetailAnalisaToActivity"
             android:label="@string/detail_analisa" />

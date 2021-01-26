@@ -63,6 +63,8 @@
     <string name="leaderboard_first_try" translatable="false">Leaderboard First Try</string>
     <string name="leaderboard_askgram" translatable="false">Leaderboard askgram</string>
     <string name="leaderboard_global" translatable="false">Leaderboard global</string>
+    <string name="saintek" translatable="false">Saintek</string>
+    <string name="soshum" translatable="false">Soshum</string>
 
     <string name="fisika" translatable="false">Fisika</string>
     <string name="kimia" translatable="false">Kimia</string>
@@ -119,5 +121,6 @@
     <string name="title_activity_detail_leaderboard">Leaderboard</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_leaderboard_global">LeaderboardGlobalActivity</string>
 
 </resources>

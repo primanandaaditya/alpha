@@ -5,8 +5,10 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.example.alpha.R
+import com.example.alpha.fragments.dashboard.SaintekFragment
 import com.example.alpha.fragments.dashboard.SekolahFragment
 import com.example.alpha.fragments.dashboard.SemuaFragment
+import com.example.alpha.fragments.dashboard.SoshumFragment
 
 private val TAB_TITLES = arrayOf(
         R.string.saintek,
@@ -19,8 +21,8 @@ class SectionsPagerAdapter(private val context: Context, fm: FragmentManager)
 
     override fun getItem(position: Int): Fragment {
         when (position) {
-            0 -> return SekolahFragment()
-            1 -> return SemuaFragment()
+            0 -> return SaintekFragment()
+            1 -> return SoshumFragment()
             else -> { // Note the block
                 return SekolahFragment()
             }

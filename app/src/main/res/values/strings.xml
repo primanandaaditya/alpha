@@ -65,6 +65,7 @@
     <string name="leaderboard_global" translatable="false">Leaderboard global</string>
     <string name="saintek" translatable="false">Saintek</string>
     <string name="soshum" translatable="false">Soshum</string>
+    <string name="kalahkan" translatable="true">Kalahkan</string>
 
     <string name="fisika" translatable="false">Fisika</string>
     <string name="kimia" translatable="false">Kimia</string>

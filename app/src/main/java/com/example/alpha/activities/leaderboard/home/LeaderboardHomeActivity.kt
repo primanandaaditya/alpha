@@ -17,6 +17,7 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat.getSystemService
 import com.example.alpha.activities.leaderboard.askgram.LeaderboardAskgramActivity
 import com.example.alpha.activities.leaderboard.global.LeaderboardGlobalActivity
+import com.example.alpha.activities.leaderboard.petunjuk.PetunjukLeaderboardActivity
 
 
 class LeaderboardHomeActivity : AppCompatActivity() {
@@ -37,6 +38,8 @@ class LeaderboardHomeActivity : AppCompatActivity() {
         getSupportActionBar()!!.setDisplayHomeAsUpEnabled(true)
 
 
+
+
         lv=findViewById(R.id.lv)
         var array = ArrayList<String>()
         array.add("Soshum Paket 3")
@@ -49,6 +52,12 @@ class LeaderboardHomeActivity : AppCompatActivity() {
         lv.adapter=adapter
 
 
+        showPetunjuk()
+    }
+
+    fun showPetunjuk(){
+        var intent=Intent(this, PetunjukLeaderboardActivity::class.java)
+        startActivity(intent)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

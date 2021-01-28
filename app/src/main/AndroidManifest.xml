@@ -21,8 +21,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:excludeFromRecents="true"
+            android:theme="@style/TemaDialog"
+            android:name=".activities.leaderboard.petunjuk.PetunjukLeaderboardActivity">
+
+        </activity>
+        <activity
             android:name=".activities.leaderboard.global.LeaderboardGlobalActivity"
-            android:label="@string/leaderboard_global"></activity>
+            android:label="@string/leaderboard_global" />
         <activity
             android:name=".activities.leaderboard.askgram.LeaderboardAskgramActivity"
             android:label="@string/leaderboard_askgram" />

@@ -71,6 +71,8 @@
     <string name="petunjuk_2" translatable="false">Menampilkan juara berdasarkan perolehan skor tertinggi dari masing-masing bidang (saintek dan soshum). TOP 3 Leaderboard global mendapatkan cash prize Rp. 300.000 untuk juara pertama, Rp.200.000 untuk juara kedua, dan Rp.100.000 untuk juara ketiga dengan periode seminggu setelah launching soal. Untuk info lebih lanjut klik disini.</string>
     <string name="petunjuk_3" translatable="false">Menampilkan juara berdasarkan jawaban TOP dengan like terbanyak di Askgram. Juara 1 mendapatkan Rp. 100.000 per bulannya.</string>
     <string name="saya_mengerti" translatable="false">Saya mengerti</string>
+    <string name="video_training" translatable="true">Video training</string>
+
     <string name="fisika" translatable="false">Fisika</string>
     <string name="kimia" translatable="false">Kimia</string>
     <string name="biologi" translatable="false">Biologi</string>

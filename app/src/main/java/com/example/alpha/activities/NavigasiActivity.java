@@ -9,6 +9,7 @@ import com.example.alpha.R;
 import com.example.alpha.activities.leaderboard.home.LeaderboardHomeActivity;
 import com.example.alpha.activities.to.grafik.GrafikToActivity;
 import com.example.alpha.activities.ui.home.HomeFragment;
+import com.example.alpha.activities.video.VideoActivity;
 import com.example.alpha.fragments.belajar.BelajarFragment;
 import com.example.alpha.interfaces.IHome;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -77,7 +78,8 @@ public class NavigasiActivity extends AppCompatActivity implements IHome {
 
     @Override
     public void callVideoTrialSoal() {
-
+        Intent intent = new Intent(NavigasiActivity.this, VideoActivity.class);
+        startActivity(intent);
     }
 
     @Override

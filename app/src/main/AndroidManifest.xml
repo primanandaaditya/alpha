@@ -21,11 +21,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:label="@string/menu_video_trial_soal"
+            android:name=".activities.video.PlayVideoActivity"></activity>
+        <activity
+            android:name=".activities.video.VideoActivity"
+            android:label="@string/menu_video_trial_soal"></activity>
+        <activity
+            android:name=".activities.leaderboard.petunjuk.PetunjukLeaderboardActivity"
             android:excludeFromRecents="true"
-            android:theme="@style/TemaDialog"
-            android:name=".activities.leaderboard.petunjuk.PetunjukLeaderboardActivity">
-
-        </activity>
+            android:theme="@style/TemaDialog" />
         <activity
             android:name=".activities.leaderboard.global.LeaderboardGlobalActivity"
             android:label="@string/leaderboard_global" />

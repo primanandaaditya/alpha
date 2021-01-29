@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.video.PlayVideoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <VideoView
+                android:id="@+id/vv"
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+            </VideoView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></View>
+            <TextView
+                android:textSize="20dp"
+                android:text="@string/menu_video_trial_soal"
+                android:textColor="@color/putih"
+                android:textStyle="bold"
+                android:id="@+id/tv_judul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:textColor="@color/putih"
+                android:text="@string/menu_video_trial_soal"
+                android:id="@+id/tv_view"
+                android:textSize="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:textColor="@color/putih"
+                android:text="@string/menu_video_trial_soal"
+                android:textSize="12dp"
+                android:id="@+id/tv_ago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></View>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        app:srcCompat="@drawable/ic_jempol_atas"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/putih"
+                        android:text="100"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        app:srcCompat="@drawable/ic_jempol_bawah"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/putih"
+                        android:text="5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        app:srcCompat="@drawable/ic_download"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/putih"
+                        android:text="Download"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        app:srcCompat="@drawable/ic_share"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/putih"
+                        android:text="Share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        app:srcCompat="@drawable/ic_playlist_add"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/putih"
+                        android:text="Add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

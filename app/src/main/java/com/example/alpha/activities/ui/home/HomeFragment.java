@@ -108,6 +108,10 @@ public class HomeFragment extends Fragment {
                         navigasiActivity.callAskgram();
                         break;
 
+                    case 3:
+                        navigasiActivity.callVideoTrialSoal();
+                        break;
+
                     case 5:
                         navigasiActivity.callLeaderboard();
                         break;

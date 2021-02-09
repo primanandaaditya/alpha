@@ -21,8 +21,50 @@
                 android:id="@+id/vv"
                 android:layout_width="match_parent"
                 android:layout_height="300dp">
-
             </VideoView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></View>
+
+            <LinearLayout
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/btn_pause"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:srcCompat="@drawable/ic_pause"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/btn_play"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:srcCompat="@drawable/ic_play"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/btn_stop"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:srcCompat="@drawable/ic_stop"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp">
+
+                </ImageView>
+
+            </LinearLayout>
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="20dp"></View>
